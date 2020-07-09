@@ -14,7 +14,11 @@
             <text class="font2" style="margin-top: 10px;">{{ item.fromairportShortName}}</text>
           </view>
         </u-col>
-        <u-col span="3" class="font2">{{item.flightTime}}</u-col>
+        <u-col span="3" class="font2">
+          <text>{{item.flightTime }}</text>
+          <image class="img" src="/static/img_jiantou.png"></image>
+        </u-col>
+
         <u-col span="3" class="flex_y">
           <text class="font1">{{ item.arrDate}}</text>
           <text class="font2" style="margin-top: 10px;">{{ item.toairportShortName}}</text>
@@ -29,7 +33,7 @@
         <u-image
           width="12px"
           height="12px"
-          src="http://img.shanglv51.com/ChaiKe/Aircode/MF.png"
+          :src="item.airLogo"
           style="margin-right: 8.33rpx;"
           :fade="false"
         ></u-image>
@@ -64,11 +68,10 @@ export default {
   },
 
   created() {
-     uni.getStorage({
+    uni.getStorage({
       key: "fromCity",
       success: res => {
-		  console.log("123123");
-		  
+
         this.fromCity = res.data.cityCode;
         uni.getStorage({
           key: "arrCity",
@@ -134,10 +137,9 @@ export default {
       //
 
       const url =
-		"http://nwgateway.shanglv51.com/domesticticketflight/yx/querysingle/flightQuerySingle";
-		
-		console.log("this.arrCity ",this.arrCity );
-		
+        "http://nwgateway.shanglv51.com/domesticticketflight/yx/querysingle/flightQuerySingle";
+
+
       const data = {
         data: {
           voyageTypeID: 1,
@@ -154,17 +156,25 @@ export default {
       const header = {
         Authorization: this.tocken
       };
+      
       uni.request({
         url: url,
         data: data,
         method: "POST",
         header: header,
         success: res => {
-          console.log("res123", res);
           // 这里要修改
           if (res.statusCode == 391) {
             this.getTocken();
-          } else {
+          }else if(res.data.code==0){
+           uni.showToast({
+            title: res.data.message,
+            duration: 3000,
+            icon:'none',
+
+            });
+            
+          }else {
             // 处理数据格式
             this.airData = JSON.parse(JSON.stringify(res.data.data.flights));
             this.airData.forEach(element => {
@@ -180,6 +190,9 @@ export default {
             });
           }
         }
+
+      
+
       });
     }
   }
@@ -230,6 +243,11 @@ page {
     color: rgb(153, 153, 153);
     font-size: 25rpx;
     line-height: 25rpx;
+    .img {
+      height: 6px;
+      width: 80px;
+      margin-left: -16px;
+    }
   }
 
   .font3 {

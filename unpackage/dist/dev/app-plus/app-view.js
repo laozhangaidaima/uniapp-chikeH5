@@ -3996,31 +3996,40 @@ var render = function() {
                     staticClass: _vm._$g("8-" + $30, "sc"),
                     attrs: { _i: "8-" + $30 }
                   },
-                  [_vm._v(_vm._$g("8-" + $30, "t0-0"))]
+                  [
+                    _c("v-uni-text", { attrs: { _i: "9-" + $30 } }, [
+                      _vm._v(_vm._$g("9-" + $30, "t0-0"))
+                    ]),
+                    _c("v-uni-image", {
+                      staticClass: _vm._$g("10-" + $30, "sc"),
+                      attrs: { src: "/static/img_jiantou.png", _i: "10-" + $30 }
+                    })
+                  ],
+                  1
                 ),
                 _c(
                   "u-col",
                   {
-                    staticClass: _vm._$g("9-" + $30, "sc"),
-                    attrs: { _i: "9-" + $30 }
+                    staticClass: _vm._$g("11-" + $30, "sc"),
+                    attrs: { _i: "11-" + $30 }
                   },
                   [
                     _c(
                       "v-uni-text",
                       {
-                        staticClass: _vm._$g("10-" + $30, "sc"),
-                        attrs: { _i: "10-" + $30 }
+                        staticClass: _vm._$g("12-" + $30, "sc"),
+                        attrs: { _i: "12-" + $30 }
                       },
-                      [_vm._v(_vm._$g("10-" + $30, "t0-0"))]
+                      [_vm._v(_vm._$g("12-" + $30, "t0-0"))]
                     ),
                     _c(
                       "v-uni-text",
                       {
-                        staticClass: _vm._$g("11-" + $30, "sc"),
+                        staticClass: _vm._$g("13-" + $30, "sc"),
                         staticStyle: { "margin-top": "10px" },
-                        attrs: { _i: "11-" + $30 }
+                        attrs: { _i: "13-" + $30 }
                       },
-                      [_vm._v(_vm._$g("11-" + $30, "t0-0"))]
+                      [_vm._v(_vm._$g("13-" + $30, "t0-0"))]
                     )
                   ],
                   1
@@ -4028,11 +4037,11 @@ var render = function() {
                 _c(
                   "u-col",
                   {
-                    staticClass: _vm._$g("12-" + $30, "sc"),
+                    staticClass: _vm._$g("14-" + $30, "sc"),
                     staticStyle: { display: "flex", "align-items": "center" },
-                    attrs: { _i: "12-" + $30 }
+                    attrs: { _i: "14-" + $30 }
                   },
-                  [_vm._v(_vm._$g("12-" + $30, "t0-0"))]
+                  [_vm._v(_vm._$g("14-" + $30, "t0-0"))]
                 )
               ],
               1
@@ -4040,16 +4049,16 @@ var render = function() {
             _c(
               "u-row",
               {
-                staticClass: _vm._$g("13-" + $30, "sc"),
+                staticClass: _vm._$g("15-" + $30, "sc"),
                 staticStyle: { "margin-top": "10px", "margin-left": "3px" },
-                attrs: { _i: "13-" + $30 }
+                attrs: { _i: "15-" + $30 }
               },
               [
                 _c("u-image", {
                   staticStyle: { "margin-right": "8.33rpx" },
-                  attrs: { _i: "14-" + $30 }
+                  attrs: { _i: "16-" + $30 }
                 }),
-                _vm._v(_vm._$g("13-" + $30, "t1-0"))
+                _vm._v(_vm._$g("15-" + $30, "t1-0"))
               ],
               1
             )
@@ -4057,7 +4066,7 @@ var render = function() {
           1
         )
       }),
-      _c("u-toast", { ref: "uToast", attrs: { _i: 15 } })
+      _c("u-toast", { ref: "uToast", attrs: { _i: 17 } })
     ],
     2
   )
@@ -4943,7 +4952,7 @@ if(false) {}
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ./node_modules/css-loader/dist/runtime/api.js */ 13);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些\"u-\"开头的自定义变量\r\n * uView自定义的css类名和scss变量，均以\"u-\"开头，不会造成冲突，请放心使用 \r\n */\n.flex_y {\r\n  display: -webkit-box;\r\n  display: -webkit-flex;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n  -webkit-flex-direction: column;\r\n          flex-direction: column;\n}\n.flex_x {\r\n  display: -webkit-box;\r\n  display: -webkit-flex;\r\n  display: flex;\n}\n.flex-y-center {\r\n  -webkit-box-align: center;\r\n  -webkit-align-items: center;\r\n          align-items: center;\n}\n.flex-space-between {\r\n  -webkit-box-pack: justify;\r\n  -webkit-justify-content: space-between;\r\n          justify-content: space-between;\n}\n.flex-x-center {\r\n  -webkit-box-pack: center;\r\n  -webkit-justify-content: center;\r\n          justify-content: center;\n}\n.center {\r\n  position: absolute;\r\n  border: 1px solid black;\r\n  width: 300px;\r\n  padding: 10px;\r\n  left: 50%;\r\n  top: 30%;\r\n  z-index: 1001;\n}\nbody .font1 {\r\n  font-size: 39.58rpx;\r\n  line-height: 39.58rpx;\n}\nbody .font2 {\r\n  color: #999999;\r\n  font-size: 25rpx;\r\n  line-height: 25rpx;\n}\nbody .font3 {\r\n  color: #ff7624;\r\n  font-size: 37.5rpx;\r\n  line-height: 37.5rpx;\n}\r\n", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\r\n/**\r\n * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些\"u-\"开头的自定义变量\r\n * uView自定义的css类名和scss变量，均以\"u-\"开头，不会造成冲突，请放心使用 \r\n */\n.flex_y {\r\n  display: -webkit-box;\r\n  display: -webkit-flex;\r\n  display: flex;\r\n  -webkit-box-orient: vertical;\r\n  -webkit-box-direction: normal;\r\n  -webkit-flex-direction: column;\r\n          flex-direction: column;\n}\n.flex_x {\r\n  display: -webkit-box;\r\n  display: -webkit-flex;\r\n  display: flex;\n}\n.flex-y-center {\r\n  -webkit-box-align: center;\r\n  -webkit-align-items: center;\r\n          align-items: center;\n}\n.flex-space-between {\r\n  -webkit-box-pack: justify;\r\n  -webkit-justify-content: space-between;\r\n          justify-content: space-between;\n}\n.flex-x-center {\r\n  -webkit-box-pack: center;\r\n  -webkit-justify-content: center;\r\n          justify-content: center;\n}\n.center {\r\n  position: absolute;\r\n  border: 1px solid black;\r\n  width: 300px;\r\n  padding: 10px;\r\n  left: 50%;\r\n  top: 30%;\r\n  z-index: 1001;\n}\nbody .font1 {\r\n  font-size: 39.58rpx;\r\n  line-height: 39.58rpx;\n}\nbody .font2 {\r\n  color: #999999;\r\n  font-size: 25rpx;\r\n  line-height: 25rpx;\n}\nbody .font2 .img {\r\n  height: 6px;\r\n  width: 80px;\r\n  margin-left: -16px;\n}\nbody .font3 {\r\n  color: #ff7624;\r\n  font-size: 37.5rpx;\r\n  line-height: 37.5rpx;\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 

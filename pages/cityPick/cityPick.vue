@@ -14,7 +14,6 @@
 
 <script>
 import citys from "./citys.js";
-console.log(citys.length);
 import citySelect from "@/components/city-select/city-select.vue";
 export default {
   data() {
@@ -65,15 +64,12 @@ export default {
   onLoad(option) {
     this.cityType = option.cityType;
     // 获取地理位置
-    uni.getLocation({
-      type: "wgs84",
-      geocode: true,
-      success: function(res) {
-        console.log("res123", res.address);
-      }
-    });
-
-   
+    // uni.getLocation({
+    //   type: "wgs84",
+    //   geocode: true,
+    //   success: function(res) {
+    //   }
+    // });
 
     //修改数据格式
     this.formatName = "cityName";
@@ -86,15 +82,15 @@ export default {
     this.hotCity = [
       {
         cityName: "南京",
-        cityCode: 'NKG'
+        cityCode: "NKG"
       },
       {
         cityName: "北京",
-        cityCode: 'NAY'
+        cityCode: "NAY"
       },
       {
         cityName: "长沙",
-        cityCode: 'CSX'
+        cityCode: "CSX"
       }
     ];
     //修改构建索引数据
@@ -110,7 +106,6 @@ export default {
   },
   methods: {
     cityClick(item) {
-      console.log("123", item);
       const data = {
         cityName: item.cityName,
         cityCode: item.cityCode
