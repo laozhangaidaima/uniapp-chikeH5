@@ -1,1025 +1,2414 @@
 export default [{
-            'cityCode': '110100',
-            'cityName': '北京'
-        }, {
-            'cityCode': '120100',
-            'cityName': '天津'
-        }, {
-            'cityCode': '130100',
-            'cityName': '石家庄市'
-        }, {
-            'cityCode': '130200',
-            'cityName': '唐山市'
-        }, {
-            'cityCode': '130300',
-            'cityName': '秦皇岛市'
-        }, {
-            'cityCode': '130400',
-            'cityName': '邯郸市'
-        }, {
-            'cityCode': '130500',
-            'cityName': '邢台市'
-        }, {
-            'cityCode': '130600',
-            'cityName': '保定市'
-        }, {
-            'cityCode': '130700',
-            'cityName': '张家口市'
-        }, {
-            'cityCode': '130800',
-            'cityName': '承德市'
-        }, {
-            'cityCode': '130900',
-            'cityName': '沧州市'
-        }, {
-            'cityCode': '131000',
-            'cityName': '廊坊市'
-        }, {
-            'cityCode': '131100',
-            'cityName': '衡水市'
-        }, {
-            'cityCode': '140100',
-            'cityName': '太原市'
-        }, {
-            'cityCode': '140200',
-            'cityName': '大同市'
-        }, {
-            'cityCode': '140300',
-            'cityName': '阳泉市'
-        }, {
-            'cityCode': '140400',
-            'cityName': '长治市'
-        }, {
-            'cityCode': '140500',
-            'cityName': '晋城市'
-        }, {
-            'cityCode': '140600',
-            'cityName': '朔州市'
-        }, {
-            'cityCode': '140700',
-            'cityName': '晋中市'
-        }, {
-            'cityCode': '140800',
-            'cityName': '运城市'
-        }, {
-            'cityCode': '140900',
-            'cityName': '忻州市'
-        }, {
-            'cityCode': '141000',
-            'cityName': '临汾市'
-        }, {
-            'cityCode': '141100',
-            'cityName': '吕梁市'
-        }, {
-            'cityCode': '150100',
-            'cityName': '呼和浩特市'
-        }, {
-            'cityCode': '150200',
-            'cityName': '包头市'
-        }, {
-            'cityCode': '150300',
-            'cityName': '乌海市'
-        }, {
-            'cityCode': '150400',
-            'cityName': '赤峰市'
-        }, {
-            'cityCode': '150500',
-            'cityName': '通辽市'
-        }, {
-            'cityCode': '150600',
-            'cityName': '鄂尔多斯市'
-        }, {
-            'cityCode': '150700',
-            'cityName': '呼伦贝尔市'
-        }, {
-            'cityCode': '150800',
-            'cityName': '巴彦淖尔市'
-        }, {
-            'cityCode': '150900',
-            'cityName': '乌兰察布市'
-        }, {
-            'cityCode': '152200',
-            'cityName': '兴安盟'
-        }, {
-            'cityCode': '152500',
-            'cityName': '锡林郭勒盟'
-        }, {
-            'cityCode': '152900',
-            'cityName': '阿拉善盟'
-        }, {
-            'cityCode': '210100',
-            'cityName': '沈阳市'
-        }, {
-            'cityCode': '210200',
-            'cityName': '大连市'
-        }, {
-            'cityCode': '210300',
-            'cityName': '鞍山市'
-        }, {
-            'cityCode': '210400',
-            'cityName': '抚顺市'
-        }, {
-            'cityCode': '210500',
-            'cityName': '本溪市'
-        }, {
-            'cityCode': '210600',
-            'cityName': '丹东市'
-        }, {
-            'cityCode': '210700',
-            'cityName': '锦州市'
-        }, {
-            'cityCode': '210800',
-            'cityName': '营口市'
-        }, {
-            'cityCode': '210900',
-            'cityName': '阜新市'
-        }, {
-            'cityCode': '211000',
-            'cityName': '辽阳市'
-        }, {
-            'cityCode': '211100',
-            'cityName': '盘锦市'
-        }, {
-            'cityCode': '211200',
-            'cityName': '铁岭市'
-        }, {
-            'cityCode': '211300',
-            'cityName': '朝阳市'
-        }, {
-            'cityCode': '211400',
-            'cityName': '葫芦岛市'
-        }, {
-            'cityCode': '220100',
-            'cityName': '长春市'
-        }, {
-            'cityCode': '220200',
-            'cityName': '吉林市'
-        }, {
-            'cityCode': '220300',
-            'cityName': '四平市'
-        }, {
-            'cityCode': '220400',
-            'cityName': '辽源市'
-        }, {
-            'cityCode': '220500',
-            'cityName': '通化市'
-        }, {
-            'cityCode': '220600',
-            'cityName': '白山市'
-        }, {
-            'cityCode': '220700',
-            'cityName': '松原市'
-        }, {
-            'cityCode': '220800',
-            'cityName': '白城市'
-        }, {
-            'cityCode': '222400',
-            'cityName': '延边朝鲜族自治州'
-        }, {
-            'cityCode': '230100',
-            'cityName': '哈尔滨市'
-        }, {
-            'cityCode': '230200',
-            'cityName': '齐齐哈尔市'
-        }, {
-            'cityCode': '230300',
-            'cityName': '鸡西市'
-        }, {
-            'cityCode': '230400',
-            'cityName': '鹤岗市'
-        }, {
-            'cityCode': '230500',
-            'cityName': '双鸭山市'
-        }, {
-            'cityCode': '230600',
-            'cityName': '大庆市'
-        }, {
-            'cityCode': '230700',
-            'cityName': '伊春市'
-        }, {
-            'cityCode': '230800',
-            'cityName': '佳木斯市'
-        }, {
-            'cityCode': '230900',
-            'cityName': '七台河市'
-        }, {
-            'cityCode': '231000',
-            'cityName': '牡丹江市'
-        }, {
-            'cityCode': '231100',
-            'cityName': '黑河市'
-        }, {
-            'cityCode': '231200',
-            'cityName': '绥化市'
-        }, {
-            'cityCode': '232700',
-            'cityName': '大兴安岭地区'
-        }, {
-            'cityCode': '310100',
-            'cityName': '上海市'
-        }, {
-            'cityCode': '320100',
-            'cityName': '南京市'
-        }, {
-            'cityCode': '320200',
-            'cityName': '无锡市'
-        }, {
-            'cityCode': '320300',
-            'cityName': '徐州市'
-        }, {
-            'cityCode': '320400',
-            'cityName': '常州市'
-        }, {
-            'cityCode': '320500',
-            'cityName': '苏州市'
-        }, {
-            'cityCode': '320600',
-            'cityName': '南通市'
-        }, {
-            'cityCode': '320700',
-            'cityName': '连云港市'
-        }, {
-            'cityCode': '320800',
-            'cityName': '淮安市'
-        }, {
-            'cityCode': '320900',
-            'cityName': '盐城市'
-        }, {
-            'cityCode': '321000',
-            'cityName': '扬州市'
-        }, {
-            'cityCode': '321100',
-            'cityName': '镇江市'
-        }, {
-            'cityCode': '321200',
-            'cityName': '泰州市'
-        }, {
-            'cityCode': '321300',
-            'cityName': '宿迁市'
-        }, {
-            'cityCode': '330100',
-            'cityName': '杭州市'
-        }, {
-            'cityCode': '330200',
-            'cityName': '宁波市'
-        }, {
-            'cityCode': '330300',
-            'cityName': '温州市'
-        }, {
-            'cityCode': '330400',
-            'cityName': '嘉兴市'
-        }, {
-            'cityCode': '330500',
-            'cityName': '湖州市'
-        }, {
-            'cityCode': '330600',
-            'cityName': '绍兴市'
-        }, {
-            'cityCode': '330700',
-            'cityName': '金华市'
-        }, {
-            'cityCode': '330800',
-            'cityName': '衢州市'
-        }, {
-            'cityCode': '330900',
-            'cityName': '舟山市'
-        }, {
-            'cityCode': '331000',
-            'cityName': '台州市'
-        }, {
-            'cityCode': '331100',
-            'cityName': '丽水市'
-        }, {
-            'cityCode': '340100',
-            'cityName': '合肥市'
-        }, {
-            'cityCode': '340200',
-            'cityName': '芜湖市'
-        }, {
-            'cityCode': '340300',
-            'cityName': '蚌埠市'
-        }, {
-            'cityCode': '340400',
-            'cityName': '淮南市'
-        }, {
-            'cityCode': '340500',
-            'cityName': '马鞍山市'
-        }, {
-            'cityCode': '340600',
-            'cityName': '淮北市'
-        }, {
-            'cityCode': '340700',
-            'cityName': '铜陵市'
-        }, {
-            'cityCode': '340800',
-            'cityName': '安庆市'
-        }, {
-            'cityCode': '341000',
-            'cityName': '黄山市'
-        }, {
-            'cityCode': '341100',
-            'cityName': '滁州市'
-        }, {
-            'cityCode': '341200',
-            'cityName': '阜阳市'
-        }, {
-            'cityCode': '341300',
-            'cityName': '宿州市'
-        }, {
-            'cityCode': '341500',
-            'cityName': '六安市'
-        }, {
-            'cityCode': '341600',
-            'cityName': '亳州市'
-        }, {
-            'cityCode': '341700',
-            'cityName': '池州市'
-        }, {
-            'cityCode': '341800',
-            'cityName': '宣城市'
-        }, {
-            'cityCode': '350100',
-            'cityName': '福州市'
-        }, {
-            'cityCode': '350200',
-            'cityName': '厦门市'
-        }, {
-            'cityCode': '350300',
-            'cityName': '莆田市'
-        }, {
-            'cityCode': '350400',
-            'cityName': '三明市'
-        }, {
-            'cityCode': '350500',
-            'cityName': '泉州市'
-        }, {
-            'cityCode': '350600',
-            'cityName': '漳州市'
-        }, {
-            'cityCode': '350700',
-            'cityName': '南平市'
-        }, {
-            'cityCode': '350800',
-            'cityName': '龙岩市'
-        }, {
-            'cityCode': '350900',
-            'cityName': '宁德市'
-        }, {
-            'cityCode': '360100',
-            'cityName': '南昌市'
-        }, {
-            'cityCode': '360200',
-            'cityName': '景德镇市'
-        }, {
-            'cityCode': '360300',
-            'cityName': '萍乡市'
-        }, {
-            'cityCode': '360400',
-            'cityName': '九江市'
-        }, {
-            'cityCode': '360500',
-            'cityName': '新余市'
-        }, {
-            'cityCode': '360600',
-            'cityName': '鹰潭市'
-        }, {
-            'cityCode': '360700',
-            'cityName': '赣州市'
-        }, {
-            'cityCode': '360800',
-            'cityName': '吉安市'
-        }, {
-            'cityCode': '360900',
-            'cityName': '宜春市'
-        }, {
-            'cityCode': '361000',
-            'cityName': '抚州市'
-        }, {
-            'cityCode': '361100',
-            'cityName': '上饶市'
-        }, {
-            'cityCode': '370100',
-            'cityName': '济南市'
-        }, {
-            'cityCode': '370200',
-            'cityName': '青岛市'
-        }, {
-            'cityCode': '370300',
-            'cityName': '淄博市'
-        }, {
-            'cityCode': '370400',
-            'cityName': '枣庄市'
-        }, {
-            'cityCode': '370500',
-            'cityName': '东营市'
-        }, {
-            'cityCode': '370600',
-            'cityName': '烟台市'
-        }, {
-            'cityCode': '370700',
-            'cityName': '潍坊市'
-        }, {
-            'cityCode': '370800',
-            'cityName': '济宁市'
-        }, {
-            'cityCode': '370900',
-            'cityName': '泰安市'
-        }, {
-            'cityCode': '371000',
-            'cityName': '威海市'
-        }, {
-            'cityCode': '371100',
-            'cityName': '日照市'
-        }, {
-            'cityCode': '371200',
-            'cityName': '莱芜市'
-        }, {
-            'cityCode': '371300',
-            'cityName': '临沂市'
-        }, {
-            'cityCode': '371400',
-            'cityName': '德州市'
-        }, {
-            'cityCode': '371500',
-            'cityName': '聊城市'
-        }, {
-            'cityCode': '371600',
-            'cityName': '滨州市'
-        }, {
-            'cityCode': '371700',
-            'cityName': '菏泽市'
-        }, {
-            'cityCode': '410100',
-            'cityName': '郑州市'
-        }, {
-            'cityCode': '410200',
-            'cityName': '开封市'
-        }, {
-            'cityCode': '410300',
-            'cityName': '洛阳市'
-        }, {
-            'cityCode': '410400',
-            'cityName': '平顶山市'
-        }, {
-            'cityCode': '410500',
-            'cityName': '安阳市'
-        }, {
-            'cityCode': '410600',
-            'cityName': '鹤壁市'
-        }, {
-            'cityCode': '410700',
-            'cityName': '新乡市'
-        }, {
-            'cityCode': '410800',
-            'cityName': '焦作市'
-        }, {
-            'cityCode': '410900',
-            'cityName': '濮阳市'
-        }, {
-            'cityCode': '411000',
-            'cityName': '许昌市'
-        }, {
-            'cityCode': '411100',
-            'cityName': '漯河市'
-        }, {
-            'cityCode': '411200',
-            'cityName': '三门峡市'
-        }, {
-            'cityCode': '411300',
-            'cityName': '南阳市'
-        }, {
-            'cityCode': '411400',
-            'cityName': '商丘市'
-        }, {
-            'cityCode': '411500',
-            'cityName': '信阳市'
-        }, {
-            'cityCode': '411600',
-            'cityName': '周口市'
-        }, {
-            'cityCode': '411700',
-            'cityName': '驻马店市'
-        }, {
-            'cityCode': '419000',
-            'cityName': '省直辖县级行政区划'
-        }, {
-            'cityCode': '420100',
-            'cityName': '武汉市'
-        }, {
-            'cityCode': '420200',
-            'cityName': '黄石市'
-        }, {
-            'cityCode': '420300',
-            'cityName': '十堰市'
-        }, {
-            'cityCode': '420500',
-            'cityName': '宜昌市'
-        }, {
-            'cityCode': '420600',
-            'cityName': '襄阳市'
-        }, {
-            'cityCode': '420700',
-            'cityName': '鄂州市'
-        }, {
-            'cityCode': '420800',
-            'cityName': '荆门市'
-        }, {
-            'cityCode': '420900',
-            'cityName': '孝感市'
-        }, {
-            'cityCode': '421000',
-            'cityName': '荆州市'
-        }, {
-            'cityCode': '421100',
-            'cityName': '黄冈市'
-        }, {
-            'cityCode': '421200',
-            'cityName': '咸宁市'
-        }, {
-            'cityCode': '421300',
-            'cityName': '随州市'
-        }, {
-            'cityCode': '422800',
-            'cityName': '恩施土家族苗族自治州'
-        }, {
-            'cityCode': '429000',
-            'cityName': '省直辖县级行政区划'
-        }, {
-            'cityCode': '430100',
-            'cityName': '长沙市'
-        }, {
-            'cityCode': '430200',
-            'cityName': '株洲市'
-        }, {
-            'cityCode': '430300',
-            'cityName': '湘潭市'
-        }, {
-            'cityCode': '430400',
-            'cityName': '衡阳市'
-        }, {
-            'cityCode': '430500',
-            'cityName': '邵阳市'
-        }, {
-            'cityCode': '430600',
-            'cityName': '岳阳市'
-        }, {
-            'cityCode': '430700',
-            'cityName': '常德市'
-        }, {
-            'cityCode': '430800',
-            'cityName': '张家界市'
-        }, {
-            'cityCode': '430900',
-            'cityName': '益阳市'
-        }, {
-            'cityCode': '431000',
-            'cityName': '郴州市'
-        }, {
-            'cityCode': '431100',
-            'cityName': '永州市'
-        }, {
-            'cityCode': '431200',
-            'cityName': '怀化市'
-        }, {
-            'cityCode': '431300',
-            'cityName': '娄底市'
-        }, {
-            'cityCode': '433100',
-            'cityName': '湘西土家族苗族自治州'
-        }, {
-            'cityCode': '440100',
-            'cityName': '广州市'
-        }, {
-            'cityCode': '440200',
-            'cityName': '韶关市'
-        }, {
-            'cityCode': '440300',
-            'cityName': '深圳市'
-        }, {
-            'cityCode': '440400',
-            'cityName': '珠海市'
-        }, {
-            'cityCode': '440500',
-            'cityName': '汕头市'
-        }, {
-            'cityCode': '440600',
-            'cityName': '佛山市'
-        }, {
-            'cityCode': '440700',
-            'cityName': '江门市'
-        }, {
-            'cityCode': '440800',
-            'cityName': '湛江市'
-        }, {
-            'cityCode': '440900',
-            'cityName': '茂名市'
-        }, {
-            'cityCode': '441200',
-            'cityName': '肇庆市'
-        }, {
-            'cityCode': '441300',
-            'cityName': '惠州市'
-        }, {
-            'cityCode': '441400',
-            'cityName': '梅州市'
-        }, {
-            'cityCode': '441500',
-            'cityName': '汕尾市'
-        }, {
-            'cityCode': '441600',
-            'cityName': '河源市'
-        }, {
-            'cityCode': '441700',
-            'cityName': '阳江市'
-        }, {
-            'cityCode': '441800',
-            'cityName': '清远市'
-        }, {
-            'cityCode': '441900',
-            'cityName': '东莞市'
-        }, {
-            'cityCode': '442000',
-            'cityName': '中山市'
-        }, {
-            'cityCode': '445100',
-            'cityName': '潮州市'
-        }, {
-            'cityCode': '445200',
-            'cityName': '揭阳市'
-        }, {
-            'cityCode': '445300',
-            'cityName': '云浮市'
-        }, {
-            'cityCode': '450100',
-            'cityName': '南宁市'
-        }, {
-            'cityCode': '450200',
-            'cityName': '柳州市'
-        }, {
-            'cityCode': '450300',
-            'cityName': '桂林市'
-        }, {
-            'cityCode': '450400',
-            'cityName': '梧州市'
-        }, {
-            'cityCode': '450500',
-            'cityName': '北海市'
-        }, {
-            'cityCode': '450600',
-            'cityName': '防城港市'
-        }, {
-            'cityCode': '450700',
-            'cityName': '钦州市'
-        }, {
-            'cityCode': '450800',
-            'cityName': '贵港市'
-        }, {
-            'cityCode': '450900',
-            'cityName': '玉林市'
-        }, {
-            'cityCode': '451000',
-            'cityName': '百色市'
-        }, {
-            'cityCode': '451100',
-            'cityName': '贺州市'
-        }, {
-            'cityCode': '451200',
-            'cityName': '河池市'
-        }, {
-            'cityCode': '451300',
-            'cityName': '来宾市'
-        }, {
-            'cityCode': '451400',
-            'cityName': '崇左市'
-        }, {
-            'cityCode': '460100',
-            'cityName': '海口市'
-        }, {
-            'cityCode': '460200',
-            'cityName': '三亚市'
-        }, {
-            'cityCode': '460300',
-            'cityName': '三沙市'
-        }, {
-            'cityCode': '469000',
-            'cityName': '省直辖县级行政区划'
-        }, {
-            'cityCode': '500100',
-            'cityName': '重庆'
-        }, {
-            'cityCode': '510100',
-            'cityName': '成都市'
-        }, {
-            'cityCode': '510300',
-            'cityName': '自贡市'
-        }, {
-            'cityCode': '510400',
-            'cityName': '攀枝花市'
-        }, {
-            'cityCode': '510500',
-            'cityName': '泸州市'
-        }, {
-            'cityCode': '510600',
-            'cityName': '德阳市'
-        }, {
-            'cityCode': '510700',
-            'cityName': '绵阳市'
-        }, {
-            'cityCode': '510800',
-            'cityName': '广元市'
-        }, {
-            'cityCode': '510900',
-            'cityName': '遂宁市'
-        }, {
-            'cityCode': '511000',
-            'cityName': '内江市'
-        }, {
-            'cityCode': '511100',
-            'cityName': '乐山市'
-        }, {
-            'cityCode': '511300',
-            'cityName': '南充市'
-        }, {
-            'cityCode': '511400',
-            'cityName': '眉山市'
-        }, {
-            'cityCode': '511500',
-            'cityName': '宜宾市'
-        }, {
-            'cityCode': '511600',
-            'cityName': '广安市'
-        }, {
-            'cityCode': '511700',
-            'cityName': '达州市'
-        }, {
-            'cityCode': '511800',
-            'cityName': '雅安市'
-        }, {
-            'cityCode': '511900',
-            'cityName': '巴中市'
-        }, {
-            'cityCode': '512000',
-            'cityName': '资阳市'
-        }, {
-            'cityCode': '513200',
-            'cityName': '阿坝藏族羌族自治州'
-        }, {
-            'cityCode': '513300',
-            'cityName': '甘孜藏族自治州'
-        }, {
-            'cityCode': '513400',
-            'cityName': '凉山彝族自治州'
-        }, {
-            'cityCode': '520100',
-            'cityName': '贵阳市'
-        }, {
-            'cityCode': '520200',
-            'cityName': '六盘水市'
-        }, {
-            'cityCode': '520300',
-            'cityName': '遵义市'
-        }, {
-            'cityCode': '520400',
-            'cityName': '安顺市'
-        }, {
-            'cityCode': '520500',
-            'cityName': '毕节市'
-        }, {
-            'cityCode': '520600',
-            'cityName': '铜仁市'
-        }, {
-            'cityCode': '522300',
-            'cityName': '黔西南布依族苗族自治州'
-        }, {
-            'cityCode': '522600',
-            'cityName': '黔东南苗族侗族自治州'
-        }, {
-            'cityCode': '522700',
-            'cityName': '黔南布依族苗族自治州'
-        }, {
-            'cityCode': '530100',
-            'cityName': '昆明市'
-        }, {
-            'cityCode': '530300',
-            'cityName': '曲靖市'
-        }, {
-            'cityCode': '530400',
-            'cityName': '玉溪市'
-        }, {
-            'cityCode': '530500',
-            'cityName': '保山市'
-        }, {
-            'cityCode': '530600',
-            'cityName': '昭通市'
-        }, {
-            'cityCode': '530700',
-            'cityName': '丽江市'
-        }, {
-            'cityCode': '530800',
-            'cityName': '普洱市'
-        }, {
-            'cityCode': '530900',
-            'cityName': '临沧市'
-        }, {
-            'cityCode': '532300',
-            'cityName': '楚雄彝族自治州'
-        }, {
-            'cityCode': '532500',
-            'cityName': '红河哈尼族彝族自治州'
-        }, {
-            'cityCode': '532600',
-            'cityName': '文山壮族苗族自治州'
-        }, {
-            'cityCode': '532800',
-            'cityName': '西双版纳傣族自治州'
-        }, {
-            'cityCode': '532900',
-            'cityName': '大理白族自治州'
-        }, {
-            'cityCode': '533100',
-            'cityName': '德宏傣族景颇族自治州'
-        }, {
-            'cityCode': '533300',
-            'cityName': '怒江傈僳族自治州'
-        }, {
-            'cityCode': '533400',
-            'cityName': '迪庆藏族自治州'
-        }, {
-            'cityCode': '540100',
-            'cityName': '拉萨市'
-        }, {
-            'cityCode': '542100',
-            'cityName': '昌都地区'
-        }, {
-            'cityCode': '542200',
-            'cityName': '山南地区'
-        }, {
-            'cityCode': '542300',
-            'cityName': '日喀则地区'
-        }, {
-            'cityCode': '542400',
-            'cityName': '那曲地区'
-        }, {
-            'cityCode': '542500',
-            'cityName': '阿里地区'
-        }, {
-            'cityCode': '542600',
-            'cityName': '林芝地区'
-        }, {
-            'cityCode': '610100',
-            'cityName': '西安市'
-        }, {
-            'cityCode': '610200',
-            'cityName': '铜川市'
-        }, {
-            'cityCode': '610300',
-            'cityName': '宝鸡市'
-        }, {
-            'cityCode': '610400',
-            'cityName': '咸阳市'
-        }, {
-            'cityCode': '610500',
-            'cityName': '渭南市'
-        }, {
-            'cityCode': '610600',
-            'cityName': '延安市'
-        }, {
-            'cityCode': '610700',
-            'cityName': '汉中市'
-        }, {
-            'cityCode': '610800',
-            'cityName': '榆林市'
-        }, {
-            'cityCode': '610900',
-            'cityName': '安康市'
-        }, {
-            'cityCode': '611000',
-            'cityName': '商洛市'
-        }, {
-            'cityCode': '620100',
-            'cityName': '兰州市'
-        }, {
-            'cityCode': '620200',
-            'cityName': '嘉峪关市'
-        }, {
-            'cityCode': '620300',
-            'cityName': '金昌市'
-        }, {
-            'cityCode': '620400',
-            'cityName': '白银市'
-        }, {
-            'cityCode': '620500',
-            'cityName': '天水市'
-        }, {
-            'cityCode': '620600',
-            'cityName': '武威市'
-        }, {
-            'cityCode': '620700',
-            'cityName': '张掖市'
-        }, {
-            'cityCode': '620800',
-            'cityName': '平凉市'
-        }, {
-            'cityCode': '620900',
-            'cityName': '酒泉市'
-        }, {
-            'cityCode': '621000',
-            'cityName': '庆阳市'
-        }, {
-            'cityCode': '621100',
-            'cityName': '定西市'
-        }, {
-            'cityCode': '621200',
-            'cityName': '陇南市'
-        }, {
-            'cityCode': '622900',
-            'cityName': '临夏回族自治州'
-        }, {
-            'cityCode': '623000',
-            'cityName': '甘南藏族自治州'
-        }, {
-            'cityCode': '630100',
-            'cityName': '西宁市'
-        }, {
-            'cityCode': '630200',
-            'cityName': '海东市'
-        }, {
-            'cityCode': '632200',
-            'cityName': '海北藏族自治州'
-        }, {
-            'cityCode': '632300',
-            'cityName': '黄南藏族自治州'
-        }, {
-            'cityCode': '632500',
-            'cityName': '海南藏族自治州'
-        }, {
-            'cityCode': '632600',
-            'cityName': '果洛藏族自治州'
-        }, {
-            'cityCode': '632700',
-            'cityName': '玉树藏族自治州'
-        }, {
-            'cityCode': '632800',
-            'cityName': '海西蒙古族藏族自治州'
-        }, {
-            'cityCode': '640100',
-            'cityName': '银川市'
-        }, {
-            'cityCode': '640200',
-            'cityName': '石嘴山市'
-        }, {
-            'cityCode': '640300',
-            'cityName': '吴忠市'
-        }, {
-            'cityCode': '640400',
-            'cityName': '固原市'
-        }, {
-            'cityCode': '640500',
-            'cityName': '中卫市'
-        }, {
-            'cityCode': '650100',
-            'cityName': '乌鲁木齐市'
-        }, {
-            'cityCode': '650200',
-            'cityName': '克拉玛依市'
-        }, {
-            'cityCode': '652100',
-            'cityName': '吐鲁番地区'
-        }, {
-            'cityCode': '652200',
-            'cityName': '哈密地区'
-        }, {
-            'cityCode': '652300',
-            'cityName': '昌吉回族自治州'
-        }, {
-            'cityCode': '652700',
-            'cityName': '博尔塔拉蒙古自治州'
-        }, {
-            'cityCode': '652800',
-            'cityName': '巴音郭楞蒙古自治州'
-        }, {
-            'cityCode': '652900',
-            'cityName': '阿克苏地区'
-        }, {
-            'cityCode': '653000',
-            'cityName': '克孜勒苏柯尔克孜自治州'
-        }, {
-            'cityCode': '653100',
-            'cityName': '喀什地区'
-        }, {
-            'cityCode': '653200',
-            'cityName': '和田地区'
-        }, {
-            'cityCode': '654000',
-            'cityName': '伊犁哈萨克自治州'
-        }, {
-            'cityCode': '654200',
-            'cityName': '塔城地区'
-        }, {
-            'cityCode': '654300',
-            'cityName': '阿勒泰地区'
-        }, {
-            'cityCode': '659000',
-            'cityName': '自治区直辖县级行政区划'
-        }
+        "keyID": 25,
+        "cityID": 151005,
+        "airportName": "阿尔山伊尔施机场",
+        "airportShortName": "伊尔施",
+        "cityCode": "YIE",
+        "cityName": "阿尔山",
+        "cityNamePY": "aershan",
+        "municipalCity": "兴安盟",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 28,
+        "cityID": 151201,
+        "airportName": "阿拉善右旗巴丹吉林机场",
+        "airportShortName": "巴丹吉林",
+        "cityCode": "RHT",
+        "cityName": "阿拉善右旗",
+        "cityNamePY": "alashanyouqi",
+        "municipalCity": "阿拉善",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 29,
+        "cityID": 151202,
+        "airportName": "阿拉善左旗巴彦浩特机场",
+        "airportShortName": "巴彦浩特",
+        "cityCode": "AXF",
+        "cityName": "阿拉善左旗",
+        "cityNamePY": "alashanzuoqi",
+        "municipalCity": "阿拉善",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 72,
+        "cityID": 340800,
+        "airportName": "安庆天柱山机场",
+        "airportShortName": "天柱山",
+        "cityCode": "AQG",
+        "cityName": "安庆",
+        "cityNamePY": "anqing",
+        "municipalCity": "安庆",
+        "hotCity": 2,
+        "province": "安徽"
+    },
+    {
+        "keyID": 143,
+        "cityID": 520200,
+        "airportName": "安顺黄果树机场",
+        "airportShortName": "黄果树",
+        "cityCode": "AVA",
+        "cityName": "安顺",
+        "cityNamePY": "anshun",
+        "municipalCity": "安顺",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 164,
+        "cityID": 540200,
+        "airportName": "阿里昆莎机场",
+        "airportShortName": "昆莎",
+        "cityCode": "NGQ",
+        "cityName": "阿里",
+        "cityNamePY": "ali",
+        "municipalCity": "阿里",
+        "hotCity": 2,
+        "province": "西藏"
+    },
+    {
+        "keyID": 172,
+        "cityID": 610900,
+        "airportName": "安康五里铺机场",
+        "airportShortName": "五里铺",
+        "cityCode": "AKA",
+        "cityName": "安康",
+        "cityNamePY": "ankang",
+        "municipalCity": "安康",
+        "hotCity": 2,
+        "province": "陕西"
+    },
+    {
+        "keyID": 194,
+        "cityID": 652900,
+        "airportName": "阿克苏机场",
+        "airportShortName": "阿克苏",
+        "cityCode": "AKU",
+        "cityName": "阿克苏",
+        "cityNamePY": "akesu",
+        "municipalCity": "阿克苏",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 200,
+        "cityID": 654300,
+        "airportName": "阿勒泰机场",
+        "airportShortName": "阿勒泰",
+        "cityCode": "AAT",
+        "cityName": "阿勒泰",
+        "cityNamePY": "aletai",
+        "municipalCity": "阿勒泰",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 1,
+        "cityID": 110100,
+        "airportName": "北京南苑机场",
+        "airportShortName": "南苑",
+        "cityCode": "NAY",
+        "cityName": "北京",
+        "cityNamePY": "beijing",
+        "municipalCity": "北京",
+        "hotCity": 1,
+        "province": "北京"
+    },
+   
+    {
+        "keyID": 17,
+        "cityID": 150200,
+        "airportName": "包头二里半机场",
+        "airportShortName": "二里半",
+        "cityCode": "BAV",
+        "cityName": "包头",
+        "cityNamePY": "baotou",
+        "municipalCity": "包头",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 23,
+        "cityID": 150800,
+        "airportName": "巴彦淖尔天吉泰机场",
+        "airportShortName": "天吉泰",
+        "cityCode": "RLK",
+        "cityName": "巴彦淖尔",
+        "cityNamePY": "bayanneer",
+        "municipalCity": "巴彦淖尔",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 41,
+        "cityID": 220600,
+        "airportName": "长白山机场",
+        "airportShortName": "长白山",
+        "cityCode": "NBS",
+        "cityName": "白山",
+        "cityNamePY": "baishan",
+        "municipalCity": "白山",
+        "hotCity": 2,
+        "province": "吉林"
+    },
+    {
+        "keyID": 124,
+        "cityID": 450500,
+        "airportName": "北海福成机场",
+        "airportShortName": "福成",
+        "cityCode": "BHY",
+        "cityName": "北海",
+        "cityNamePY": "beihai",
+        "municipalCity": "北海",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 125,
+        "cityID": 451000,
+        "airportName": "百色巴马机场",
+        "airportShortName": "巴马",
+        "cityCode": "AEB",
+        "cityName": "百色",
+        "cityNamePY": "baise",
+        "municipalCity": "百色",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 144,
+        "cityID": 520300,
+        "airportName": "毕节飞雄机场",
+        "airportShortName": "飞雄",
+        "cityCode": "BFJ",
+        "cityName": "毕节",
+        "cityNamePY": "bijie",
+        "municipalCity": "毕节",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 152,
+        "cityID": 530200,
+        "airportName": "保山云瑞机场",
+        "airportShortName": "保山",
+        "cityCode": "BSD",
+        "cityName": "保山",
+        "cityNamePY": "baoshan",
+        "municipalCity": "保山",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 191,
+        "cityID": 652700,
+        "airportName": "博乐阿拉山口机场",
+        "airportShortName": "山口",
+        "cityCode": "BPL",
+        "cityName": "博尔塔拉",
+        "cityNamePY": "boertala",
+        "municipalCity": "博尔塔拉",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 201,
+        "cityID": 654304,
+        "airportName": "布尔津喀纳斯机场",
+        "airportShortName": "喀纳斯",
+        "cityCode": "KJI",
+        "cityName": "布尔津",
+        "cityNamePY": "buerjin",
+        "municipalCity": "阿勒泰",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 203,
+        "cityID": 510300,
+        "airportName": "巴中恩阳机场",
+        "airportShortName": "恩阳机场",
+        "cityCode": "BZX",
+        "cityName": "巴中",
+        "cityNamePY": "bazhong",
+        "municipalCity": "巴中",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 12,
+        "cityID": 140400,
+        "airportName": "长治王村机场",
+        "airportShortName": "王村",
+        "cityCode": "CIH",
+        "cityName": "长治",
+        "cityNamePY": "changzhi",
+        "municipalCity": "长治",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 18,
+        "cityID": 150400,
+        "airportName": "赤峰玉龙机场",
+        "airportShortName": "玉龙",
+        "cityCode": "CIF",
+        "cityName": "赤峰",
+        "cityNamePY": "chifeng",
+        "municipalCity": "赤峰",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 34,
+        "cityID": 210202,
+        "airportName": "长海大长山岛机场",
+        "airportShortName": "大长山岛",
+        "cityCode": "CNI",
+        "cityName": "长海",
+        "cityNamePY": "changhai",
+        "municipalCity": "大连",
+        "hotCity": 2,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 38,
+        "cityID": 211300,
+        "airportName": "朝阳机场",
+        "airportShortName": "朝阳",
+        "cityCode": "CHG",
+        "cityName": "朝阳",
+        "cityNamePY": "chaoyang",
+        "municipalCity": "朝阳",
+        "hotCity": 2,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 39,
+        "cityID": 220100,
+        "airportName": "长春龙嘉国际机场",
+        "airportShortName": "龙嘉",
+        "cityCode": "CGQ",
+        "cityName": "长春",
+        "cityNamePY": "changchun",
+        "municipalCity": "长春",
+        "hotCity": 2,
+        "province": "吉林"
+    },
+    {
+        "keyID": 58,
+        "cityID": 320400,
+        "airportName": "常州奔牛机场",
+        "airportShortName": "奔牛",
+        "cityCode": "CZX",
+        "cityName": "常州",
+        "cityNamePY": "changzhou",
+        "municipalCity": "常州",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 75,
+        "cityID": 341700,
+        "airportName": "池州九华山机场",
+        "airportShortName": "九华山",
+        "cityCode": "JUH",
+        "cityName": "池州",
+        "cityNamePY": "chizhou",
+        "municipalCity": "池州",
+        "hotCity": 2,
+        "province": "安徽"
+    },
+    {
+        "keyID": 103,
+        "cityID": 430100,
+        "airportName": "长沙黄花国际机场",
+        "airportShortName": "黄花",
+        "cityCode": "CSX",
+        "cityName": "长沙",
+        "cityNamePY": "changsha",
+        "municipalCity": "长沙",
+        "hotCity": 1,
+        "province": "湖南"
+    },
+    {
+        "keyID": 104,
+        "cityID": 430700,
+        "airportName": "常德桃花源机场",
+        "airportShortName": "桃花源",
+        "cityCode": "CGD",
+        "cityName": "常德",
+        "cityNamePY": "changde",
+        "municipalCity": "常德",
+        "hotCity": 2,
+        "province": "湖南"
+    },
+    {
+        "keyID": 126,
+        "cityID": 500100,
+        "airportName": "重庆江北国际机场",
+        "airportShortName": "沙堤",
+        "cityCode": "CKG",
+        "cityName": "重庆",
+        "cityNamePY": "chongqing",
+        "municipalCity": "重庆",
+        "hotCity": 1,
+        "province": "重庆"
+    },
+    {
+        "keyID": 129,
+        "cityID": 510100,
+        "airportName": "成都双流国际机场",
+        "airportShortName": "双流",
+        "cityCode": "CTU",
+        "cityName": "成都",
+        "cityNamePY": "chengdu",
+        "municipalCity": "成都",
+        "hotCity": 1,
+        "province": "四川"
+    },
+    {
+        "keyID": 165,
+        "cityID": 540300,
+        "airportName": "昌都邦达机场",
+        "airportShortName": "邦达",
+        "cityCode": "BPX",
+        "cityName": "昌都",
+        "cityNamePY": "changdu",
+        "municipalCity": "昌都",
+        "hotCity": 2,
+        "province": "西藏"
+    },
+    {
+        "keyID": 11,
+        "cityID": 140200,
+        "airportName": "大同云冈机场",
+        "airportShortName": "云冈",
+        "cityCode": "DAT",
+        "cityName": "大同",
+        "cityNamePY": "datong",
+        "municipalCity": "大同",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 33,
+        "cityID": 210200,
+        "airportName": "大连周水子国际机场",
+        "airportShortName": "周水子",
+        "cityCode": "DLC",
+        "cityName": "大连",
+        "cityNamePY": "dalian",
+        "municipalCity": "大连",
+        "hotCity": 1,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 36,
+        "cityID": 210600,
+        "airportName": "丹东浪头机场",
+        "airportShortName": "浪头",
+        "cityCode": "DDG",
+        "cityName": "丹东",
+        "cityNamePY": "dandong",
+        "municipalCity": "丹东",
+        "hotCity": 2,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 46,
+        "cityID": 230600,
+        "airportName": "大庆萨尔图机场",
+        "airportShortName": "萨尔图",
+        "cityCode": "DQA",
+        "cityName": "大庆",
+        "cityNamePY": "daqing",
+        "municipalCity": "大庆",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 51,
+        "cityID": 231300,
+        "airportName": "加格达奇机场",
+        "airportShortName": "加格达奇",
+        "cityCode": "JGD",
+        "cityName": "大兴安岭",
+        "cityNamePY": "daxinganling",
+        "municipalCity": "大兴安岭",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 89,
+        "cityID": 370500,
+        "airportName": "东营胜利机场",
+        "airportShortName": "胜利",
+        "cityCode": "DOY",
+        "cityName": "东营",
+        "cityNamePY": "dongying",
+        "municipalCity": "东营",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 116,
+        "cityID": 441900,
+        "airportName": "东莞机场",
+        "airportShortName": "东莞",
+        "cityCode": "DGM",
+        "cityName": "东莞",
+        "cityNamePY": "dongguan",
+        "municipalCity": "东莞",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 131,
+        "cityID": 510400,
+        "airportName": "达州河市机场",
+        "airportShortName": "河市",
+        "cityCode": "DAX",
+        "cityName": "达州",
+        "cityNamePY": "dazhou",
+        "municipalCity": "达州",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 132,
+        "cityID": 510610,
+        "airportName": "稻城亚丁机场",
+        "airportShortName": "亚丁",
+        "cityCode": "DCY",
+        "cityName": "稻城",
+        "cityNamePY": "daocheng",
+        "municipalCity": "甘孜",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 154,
+        "cityID": 530400,
+        "airportName": "大理机场",
+        "airportShortName": "大理",
+        "cityCode": "DLU",
+        "cityName": "大理",
+        "cityNamePY": "dali",
+        "municipalCity": "大理",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 155,
+        "cityID": 530500,
+        "airportName": "德宏芒市机场",
+        "airportShortName": "芒市",
+        "cityCode": "LUM",
+        "cityName": "德宏",
+        "cityNamePY": "dehong",
+        "municipalCity": "德宏",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 156,
+        "cityID": 530600,
+        "airportName": "迪庆香格里拉机场",
+        "airportShortName": "香格里拉",
+        "cityCode": "DIG",
+        "cityName": "迪庆",
+        "cityNamePY": "diqing",
+        "municipalCity": "迪庆",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 179,
+        "cityID": 621003,
+        "airportName": "敦煌机场",
+        "airportShortName": "敦煌",
+        "cityCode": "DNH",
+        "cityName": "敦煌",
+        "cityNamePY": "dunhuang",
+        "municipalCity": "酒泉",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 20,
+        "cityID": 150600,
+        "airportName": "鄂尔多斯伊金霍洛机场",
+        "airportShortName": "伊金霍洛",
+        "cityCode": "DSN",
+        "cityName": "鄂尔多斯",
+        "cityNamePY": "eerduosi",
+        "municipalCity": "鄂尔多斯",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 27,
+        "cityID": 151110,
+        "airportName": "二连浩特赛乌苏机场",
+        "airportShortName": "赛乌苏",
+        "cityCode": "ERL",
+        "cityName": "二连浩特",
+        "cityNamePY": "erlianhaote",
+        "municipalCity": "锡林郭勒盟",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 30,
+        "cityID": 151203,
+        "airportName": "额济纳旗桃来机场",
+        "airportShortName": "桃来",
+        "cityCode": "EJN",
+        "cityName": "额济纳旗",
+        "cityNamePY": "ejinaqi",
+        "municipalCity": "阿拉善",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 102,
+        "cityID": 421400,
+        "airportName": "恩施许家坪机场",
+        "airportShortName": "许家坪",
+        "cityCode": "ENH",
+        "cityName": "恩施",
+        "cityNamePY": "enshi",
+        "municipalCity": "恩施",
+        "hotCity": 2,
+        "province": "湖北"
+    },
+    {
+        "keyID": 74,
+        "cityID": 341200,
+        "airportName": "阜阳西关机场",
+        "airportShortName": "西关",
+        "cityCode": "FUG",
+        "cityName": "阜阳",
+        "cityNamePY": "fuyang",
+        "municipalCity": "阜阳",
+        "hotCity": 2,
+        "province": "安徽"
+    },
+    {
+        "keyID": 76,
+        "cityID": 350100,
+        "airportName": "福州长乐国际机场",
+        "airportShortName": "长乐",
+        "cityCode": "FOC",
+        "cityName": "福州",
+        "cityNamePY": "fuzhou",
+        "municipalCity": "福州",
+        "hotCity": 1,
+        "province": "福建"
+    },
+    {
+        "keyID": 112,
+        "cityID": 440600,
+        "airportName": "佛山沙堤机场",
+        "airportShortName": "沙堤",
+        "cityCode": "FUO",
+        "cityName": "佛山",
+        "cityNamePY": "fushan",
+        "municipalCity": "佛山",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 202,
+        "cityID": 654305,
+        "airportName": "富蕴机场",
+        "airportShortName": "富蕴",
+        "cityCode": "FYN",
+        "cityName": "富蕴",
+        "cityNamePY": "fuyun",
+        "municipalCity": "阿勒泰",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 84,
+        "cityID": 360700,
+        "airportName": "赣州黄金机场",
+        "airportShortName": "黄金",
+        "cityCode": "KOW",
+        "cityName": "赣州",
+        "cityNamePY": "ganzhou",
+        "municipalCity": "赣州",
+        "hotCity": 2,
+        "province": "江西"
+    },
+    {
+        "keyID": 108,
+        "cityID": 440100,
+        "airportName": "广州白云国际机场",
+        "airportShortName": "白云",
+        "cityCode": "CAN",
+        "cityName": "广州",
+        "cityNamePY": "guangzhou",
+        "municipalCity": "广州",
+        "hotCity": 1,
+        "province": "广东"
+    },
+    {
+        "keyID": 122,
+        "cityID": 450300,
+        "airportName": "桂林两江国际机场",
+        "airportShortName": "两江",
+        "cityCode": "KWL",
+        "cityName": "桂林",
+        "cityNamePY": "guilin",
+        "municipalCity": "桂林",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 134,
+        "cityID": 510800,
+        "airportName": "广元盘龙机场",
+        "airportShortName": "盘龙",
+        "cityCode": "GYS",
+        "cityName": "广元",
+        "cityNamePY": "guangyuan",
+        "municipalCity": "广元",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 142,
+        "cityID": 520100,
+        "airportName": "贵阳龙洞堡国际机场",
+        "airportShortName": "龙洞堡",
+        "cityCode": "KWE",
+        "cityName": "贵阳",
+        "cityNamePY": "guiyang",
+        "municipalCity": "贵阳",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 180,
+        "cityID": 623000,
+        "airportName": "甘南夏河机场",
+        "airportShortName": "夏河",
+        "cityCode": "GXH",
+        "cityName": "甘南",
+        "cityNamePY": "gannan",
+        "municipalCity": "甘南",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 183,
+        "cityID": 632804,
+        "airportName": "格尔木机场",
+        "airportShortName": "格尔木",
+        "cityCode": "GOQ",
+        "cityName": "格尔木",
+        "cityNamePY": "geermu",
+        "municipalCity": "海西",
+        "hotCity": 2,
+        "province": "青海"
+    },
+    {
+        "keyID": 185,
+        "cityID": 640400,
+        "airportName": "固原六盘山机场",
+        "airportShortName": "六盘山",
+        "cityCode": "GYU",
+        "cityName": "固原",
+        "cityNamePY": "guyuan",
+        "municipalCity": "固原",
+        "hotCity": 2,
+        "province": "宁夏"
+    },
+    {
+        "keyID": 7,
+        "cityID": 130400,
+        "airportName": "邯郸机场",
+        "airportShortName": "邯郸",
+        "cityCode": "HDG",
+        "cityName": "邯郸",
+        "cityNamePY": "handan",
+        "municipalCity": "邯郸",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 16,
+        "cityID": 150100,
+        "airportName": "呼和浩特白塔国际机场",
+        "airportShortName": "白塔",
+        "cityCode": "HET",
+        "cityName": "呼和浩特",
+        "cityNamePY": "huhehaote",
+        "municipalCity": "呼和浩特",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 21,
+        "cityID": 150700,
+        "airportName": "呼伦贝尔海拉尔机场",
+        "airportShortName": "海拉尔",
+        "cityCode": "HLD",
+        "cityName": "呼伦贝尔",
+        "cityNamePY": "hulunbeier",
+        "municipalCity": "呼伦贝尔",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 43,
+        "cityID": 230100,
+        "airportName": "哈尔滨太平国际机场",
+        "airportShortName": "太平",
+        "cityCode": "HRB",
+        "cityName": "哈尔滨",
+        "cityNamePY": "haerbin",
+        "municipalCity": "哈尔滨",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 50,
+        "cityID": 231100,
+        "airportName": "黑河机场",
+        "airportShortName": "黑河",
+        "cityCode": "HEK",
+        "cityName": "黑河",
+        "cityNamePY": "heihe",
+        "municipalCity": "黑河",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 61,
+        "cityID": 320800,
+        "airportName": "淮安涟水机场",
+        "airportShortName": "涟水",
+        "cityCode": "HIA",
+        "cityName": "淮安",
+        "cityNamePY": "huaian",
+        "municipalCity": "淮安",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 64,
+        "cityID": 330100,
+        "airportName": "杭州萧山国际机场",
+        "airportShortName": "萧山",
+        "cityCode": "HGH",
+        "cityName": "杭州",
+        "cityNamePY": "hangzhou",
+        "municipalCity": "杭州",
+        "hotCity": 1,
+        "province": "浙江"
+    },
+    {
+        "keyID": 71,
+        "cityID": 340100,
+        "airportName": "合肥新桥国际机场",
+        "airportShortName": "新桥",
+        "cityCode": "HFE",
+        "cityName": "合肥",
+        "cityNamePY": "hefei",
+        "municipalCity": "合肥",
+        "hotCity": 2,
+        "province": "安徽"
+    },
+    {
+        "keyID": 73,
+        "cityID": 341000,
+        "airportName": "黄山屯溪机场",
+        "airportShortName": "屯溪",
+        "cityCode": "TXN",
+        "cityName": "黄山",
+        "cityNamePY": "huangshan",
+        "municipalCity": "黄山",
+        "hotCity": 2,
+        "province": "安徽"
+    },
+    {
+        "keyID": 107,
+        "cityID": 431200,
+        "airportName": "怀化芷江机场",
+        "airportShortName": "芷江",
+        "cityCode": "HJJ",
+        "cityName": "怀化",
+        "cityNamePY": "huaihua",
+        "municipalCity": "怀化",
+        "hotCity": 2,
+        "province": "湖南"
+    },
+    {
+        "keyID": 114,
+        "cityID": 441300,
+        "airportName": "惠州平潭机场",
+        "airportShortName": "平潭",
+        "cityCode": "HUZ",
+        "cityName": "惠州",
+        "cityNamePY": "huizhou",
+        "municipalCity": "惠州",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 118,
+        "cityID": 450100,
+        "airportName": "海口美兰国际机场",
+        "airportShortName": "美兰",
+        "cityCode": "HAK",
+        "cityName": "海口",
+        "cityNamePY": "haikou",
+        "municipalCity": "海口",
+        "hotCity": 2,
+        "province": "海南"
+    },
+    {
+        "keyID": 170,
+        "cityID": 610700,
+        "airportName": "汉中西关机场",
+        "airportShortName": "西关",
+        "cityCode": "HZG",
+        "cityName": "汉中",
+        "cityNamePY": "hanzhong",
+        "municipalCity": "汉中",
+        "hotCity": 2,
+        "province": "陕西"
+    },
+    {
+        "keyID": 190,
+        "cityID": 652200,
+        "airportName": "哈密机场",
+        "airportShortName": "哈密",
+        "cityCode": "HMI",
+        "cityName": "哈密",
+        "cityNamePY": "hami",
+        "municipalCity": "哈密",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 196,
+        "cityID": 653200,
+        "airportName": "和田机场",
+        "airportShortName": "和田",
+        "cityCode": "HTN",
+        "cityName": "和田",
+        "cityNamePY": "hetian",
+        "municipalCity": "和田",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 37,
+        "cityID": 210700,
+        "airportName": "锦州小岭子机场",
+        "airportShortName": "锦州湾",
+        "cityCode": "JNZ",
+        "cityName": "锦州",
+        "cityNamePY": "jinzhou",
+        "municipalCity": "锦州",
+        "hotCity": 2,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 45,
+        "cityID": 230300,
+        "airportName": "鸡西兴凯湖机场",
+        "airportShortName": "兴凯湖",
+        "cityCode": "JXA",
+        "cityName": "鸡西",
+        "cityNamePY": "jixi",
+        "municipalCity": "鸡西",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 48,
+        "cityID": 230800,
+        "airportName": "佳木斯东郊机场",
+        "airportShortName": "东郊",
+        "cityCode": "JMU",
+        "cityName": "佳木斯",
+        "cityNamePY": "jiamusi",
+        "municipalCity": "佳木斯",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 67,
+        "cityID": 330700,
+        "airportName": "义乌机场",
+        "airportShortName": "义乌",
+        "cityCode": "YIW",
+        "cityName": "金华",
+        "cityNamePY": "jinhua",
+        "municipalCity": "金华",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 82,
+        "cityID": 360200,
+        "airportName": "景德镇罗家机场",
+        "airportShortName": "罗家",
+        "cityCode": "JDZ",
+        "cityName": "景德镇",
+        "cityNamePY": "jingdezhen",
+        "municipalCity": "景德镇",
+        "hotCity": 2,
+        "province": "江西"
+    },
+    {
+        "keyID": 83,
+        "cityID": 360400,
+        "airportName": "九江庐山机场",
+        "airportShortName": "庐山",
+        "cityCode": "JIU",
+        "cityName": "九江",
+        "cityNamePY": "jiujiang",
+        "municipalCity": "九江",
+        "hotCity": 2,
+        "province": "江西"
+    },
+    {
+        "keyID": 85,
+        "cityID": 360800,
+        "airportName": "井冈山机场",
+        "airportShortName": "井冈山",
+        "cityCode": "JGS",
+        "cityName": "吉安",
+        "cityNamePY": "jian",
+        "municipalCity": "吉安",
+        "hotCity": 2,
+        "province": "江西"
+    },
+    {
+        "keyID": 87,
+        "cityID": 370100,
+        "airportName": "济南遥墙国际机场",
+        "airportShortName": "遥墙",
+        "cityCode": "TNA",
+        "cityName": "济南",
+        "cityNamePY": "jinan",
+        "municipalCity": "济南",
+        "hotCity": 1,
+        "province": "山东"
+    },
+    {
+        "keyID": 92,
+        "cityID": 370800,
+        "airportName": "济宁曲阜机场",
+        "airportShortName": "曲阜",
+        "cityCode": "JNG",
+        "cityName": "济宁",
+        "cityNamePY": "jining",
+        "municipalCity": "济宁",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 117,
+        "cityID": 445200,
+        "airportName": "揭阳潮汕机场",
+        "airportShortName": "潮汕",
+        "cityCode": "SWA",
+        "cityName": "揭阳",
+        "cityNamePY": "jieyang",
+        "municipalCity": "揭阳",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 130,
+        "cityID": 510205,
+        "airportName": "九寨黄龙机场",
+        "airportShortName": "黄龙",
+        "cityCode": "JZH",
+        "cityName": "九寨沟",
+        "cityNamePY": "jiuzhaigou",
+        "municipalCity": "阿坝",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 174,
+        "cityID": 620200,
+        "airportName": "嘉峪关机场",
+        "airportShortName": "嘉峪关",
+        "cityCode": "JGN",
+        "cityName": "嘉峪关",
+        "cityNamePY": "jiayuguan",
+        "municipalCity": "嘉峪关",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 175,
+        "cityID": 620300,
+        "airportName": "金昌金川机场",
+        "airportShortName": "金川",
+        "cityCode": "JIC",
+        "cityName": "金昌",
+        "cityNamePY": "jinchang",
+        "municipalCity": "金昌",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 133,
+        "cityID": 510611,
+        "airportName": "甘孜康定机场",
+        "airportShortName": "康定",
+        "cityCode": "KGT",
+        "cityName": "康定",
+        "cityNamePY": "kangding",
+        "municipalCity": "甘孜",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 151,
+        "cityID": 530100,
+        "airportName": "昆明长水国际机场",
+        "airportShortName": "长水",
+        "cityCode": "KMG",
+        "cityName": "昆明",
+        "cityNamePY": "kunming",
+        "municipalCity": "昆明",
+        "hotCity": 1,
+        "province": "云南"
+    },
+    {
+        "keyID": 188,
+        "cityID": 650200,
+        "airportName": "克拉玛依机场",
+        "airportShortName": "克拉玛依",
+        "cityCode": "KRY",
+        "cityName": "克拉玛依",
+        "cityNamePY": "kelamayi",
+        "municipalCity": "克拉玛依",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 193,
+        "cityID": 652808,
+        "airportName": "库尔勒机场",
+        "airportShortName": "库尔勒",
+        "cityCode": "KRL",
+        "cityName": "库尔勒",
+        "cityNamePY": "kuerle",
+        "municipalCity": "巴音郭楞",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 195,
+        "cityID": 653100,
+        "airportName": "喀什机场",
+        "airportShortName": "喀什",
+        "cityCode": "KHG",
+        "cityName": "喀什",
+        "cityNamePY": "kashi",
+        "municipalCity": "喀什",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 14,
+        "cityID": 141000,
+        "airportName": "临汾乔李机场",
+        "airportShortName": "乔李",
+        "cityCode": "LFQ",
+        "cityName": "临汾",
+        "cityNamePY": "linfen",
+        "municipalCity": "临汾",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 15,
+        "cityID": 141100,
+        "airportName": "吕梁机场",
+        "airportShortName": "吕梁",
+        "cityCode": "LLV",
+        "cityName": "吕梁",
+        "cityNamePY": "lvliang",
+        "municipalCity": "吕梁",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 60,
+        "cityID": 320700,
+        "airportName": "连云港白塔埠机场",
+        "airportShortName": "白塔埠",
+        "cityCode": "LYG",
+        "cityName": "连云港",
+        "cityNamePY": "lianyungang",
+        "municipalCity": "连云港",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 79,
+        "cityID": 350800,
+        "airportName": "连城冠豸山机场",
+        "airportShortName": "冠豸山",
+        "cityCode": "LCX",
+        "cityName": "龙岩",
+        "cityNamePY": "longyan",
+        "municipalCity": "龙岩",
+        "hotCity": 2,
+        "province": "福建"
+    },
+    {
+        "keyID": 95,
+        "cityID": 371300,
+        "airportName": "临沂沭埠岭机场",
+        "airportShortName": "乔李",
+        "cityCode": "LYI",
+        "cityName": "临沂",
+        "cityNamePY": "linyi",
+        "municipalCity": "临沂",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 97,
+        "cityID": 410300,
+        "airportName": "洛阳北郊机场",
+        "airportShortName": "北郊",
+        "cityCode": "LYA",
+        "cityName": "洛阳",
+        "cityNamePY": "luoyang",
+        "municipalCity": "洛阳",
+        "hotCity": 2,
+        "province": "河南"
+    },
+    {
+        "keyID": 120,
+        "cityID": 450200,
+        "airportName": "柳州白莲机场",
+        "airportShortName": "白莲",
+        "cityCode": "LZH",
+        "cityName": "柳州",
+        "cityNamePY": "liuzhou",
+        "municipalCity": "柳州",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 135,
+        "cityID": 511200,
+        "airportName": "泸州蓝田机场",
+        "airportShortName": "云龙",
+        "cityCode": "LZO",
+        "cityName": "泸州",
+        "cityNamePY": "luzhou",
+        "municipalCity": "泸州",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 146,
+        "cityID": 520513,
+        "airportName": "黎平机场",
+        "airportShortName": "黎平",
+        "cityCode": "HZH",
+        "cityName": "黎平",
+        "cityNamePY": "liping",
+        "municipalCity": "黔东南",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 157,
+        "cityID": 530900,
+        "airportName": "丽江三义机场",
+        "airportShortName": "三义",
+        "cityCode": "LJG",
+        "cityName": "丽江",
+        "cityNamePY": "lijiang",
+        "municipalCity": "丽江",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 158,
+        "cityID": 531000,
+        "airportName": "临沧机场",
+        "airportShortName": "临沧",
+        "cityCode": "LNJ",
+        "cityName": "临沧",
+        "cityNamePY": "lincang",
+        "municipalCity": "临沧",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 163,
+        "cityID": 540100,
+        "airportName": "拉萨贡嘎机场",
+        "airportShortName": "贡嘎",
+        "cityCode": "LXA",
+        "cityName": "拉萨",
+        "cityNamePY": "lasa",
+        "municipalCity": "拉萨",
+        "hotCity": 2,
+        "province": "西藏"
+    },
+    {
+        "keyID": 166,
+        "cityID": 540400,
+        "airportName": "林芝米林机场",
+        "airportShortName": "米林",
+        "cityCode": "LZY",
+        "cityName": "林芝",
+        "cityNamePY": "linzhi",
+        "municipalCity": "林芝",
+        "hotCity": 2,
+        "province": "西藏"
+    },
+    {
+        "keyID": 173,
+        "cityID": 620100,
+        "airportName": "兰州中川机场",
+        "airportShortName": "中川",
+        "cityCode": "LHW",
+        "cityName": "兰州",
+        "cityNamePY": "lanzhou",
+        "municipalCity": "兰州",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 22,
+        "cityID": 150708,
+        "airportName": "满洲里西郊机场",
+        "airportShortName": "西郊",
+        "cityCode": "NZH",
+        "cityName": "满洲里",
+        "cityNamePY": "manzhouli",
+        "municipalCity": "呼伦贝尔",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 49,
+        "cityID": 231000,
+        "airportName": "牡丹江海浪机场",
+        "airportShortName": "海浪",
+        "cityCode": "MDG",
+        "cityName": "牡丹江",
+        "cityNamePY": "mudanjiang",
+        "municipalCity": "牡丹江",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 52,
+        "cityID": 231301,
+        "airportName": "漠河古莲机场",
+        "airportShortName": "古莲",
+        "cityCode": "OHE",
+        "cityName": "漠河",
+        "cityNamePY": "mohe",
+        "municipalCity": "大兴安岭",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 115,
+        "cityID": 441400,
+        "airportName": "梅县长岗岌机场",
+        "airportShortName": "长岗岌",
+        "cityCode": "MXZ",
+        "cityName": "梅州",
+        "cityNamePY": "meizhou",
+        "municipalCity": "梅州",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 137,
+        "cityID": 511400,
+        "airportName": "绵阳南郊机场",
+        "airportShortName": "南郊",
+        "cityCode": "MIG",
+        "cityName": "绵阳",
+        "cityNamePY": "mianyang",
+        "municipalCity": "绵阳",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 55,
+        "cityID": 320100,
+        "airportName": "南京禄口国际机场",
+        "airportShortName": "禄口",
+        "cityCode": "NKG",
+        "cityName": "南京",
+        "cityNamePY": "nanjing",
+        "municipalCity": "南京",
+        "hotCity": 1,
+        "province": "江苏"
+    },
+    {
+        "keyID": 59,
+        "cityID": 320600,
+        "airportName": "南通兴东机场",
+        "airportShortName": "兴东",
+        "cityCode": "NTG",
+        "cityName": "南通",
+        "cityNamePY": "nantong",
+        "municipalCity": "南通",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 65,
+        "cityID": 330200,
+        "airportName": "宁波栎社国际机场",
+        "airportShortName": "栎社",
+        "cityCode": "NGB",
+        "cityName": "宁波",
+        "cityNamePY": "ningbo",
+        "municipalCity": "宁波",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 80,
+        "cityID": 350802,
+        "airportName": "武夷山机场",
+        "airportShortName": "武夷山",
+        "cityCode": "WUS",
+        "cityName": "武夷山",
+        "cityNamePY": "nanping",
+        "municipalCity": "南平",
+        "hotCity": 2,
+        "province": "福建"
+    },
+    {
+        "keyID": 98,
+        "cityID": 411300,
+        "airportName": "南阳姜营机场",
+        "airportShortName": "姜营",
+        "cityCode": "NNY",
+        "cityName": "南阳",
+        "cityNamePY": "nanyang",
+        "municipalCity": "南阳",
+        "hotCity": 2,
+        "province": "河南"
+    },
+    {
+        "keyID": 119,
+        "cityID": 450100,
+        "airportName": "南宁吴圩国际机场",
+        "airportShortName": "吴圩",
+        "cityCode": "NNG",
+        "cityName": "南宁",
+        "cityNamePY": "nanning",
+        "municipalCity": "南宁",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 138,
+        "cityID": 511500,
+        "airportName": "南充高坪机场",
+        "airportShortName": "高坪",
+        "cityCode": "NAO",
+        "cityName": "南充",
+        "cityNamePY": "nanchong",
+        "municipalCity": "南充",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 139,
+        "cityID": 511700,
+        "airportName": "攀枝花保安营机场",
+        "airportShortName": "保安营",
+        "cityCode": "PZI",
+        "cityName": "攀枝花",
+        "cityNamePY": "panzhihua",
+        "municipalCity": "攀枝花",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 159,
+        "cityID": 531200,
+        "airportName": "普洱思茅机场",
+        "airportShortName": "思茅",
+        "cityCode": "SYM",
+        "cityName": "普洱",
+        "cityNamePY": "puer",
+        "municipalCity": "普洱",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 6,
+        "cityID": 130300,
+        "airportName": "秦皇岛山海关机场",
+        "airportShortName": "北戴河",
+        "cityCode": "SHP",
+        "cityName": "秦皇岛",
+        "cityNamePY": "qinhuangdao",
+        "municipalCity": "秦皇岛",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 44,
+        "cityID": 230200,
+        "airportName": "齐齐哈尔三家子机场",
+        "airportShortName": "三家子",
+        "cityCode": "NDG",
+        "cityName": "齐齐哈尔",
+        "cityNamePY": "qiqihaer",
+        "municipalCity": "齐齐哈尔",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 68,
+        "cityID": 330800,
+        "airportName": "衢州机场",
+        "airportShortName": "衢州",
+        "cityCode": "JUZ",
+        "cityName": "衢州",
+        "cityNamePY": "quzhou",
+        "municipalCity": "衢州",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 78,
+        "cityID": 350500,
+        "airportName": "泉州晋江机场",
+        "airportShortName": "晋江",
+        "cityCode": "JJN",
+        "cityName": "泉州",
+        "cityNamePY": "quanzhou",
+        "municipalCity": "泉州",
+        "hotCity": 2,
+        "province": "福建"
+    },
+    {
+        "keyID": 88,
+        "cityID": 370200,
+        "airportName": "青岛流亭国际机场",
+        "airportShortName": "流亭",
+        "cityCode": "TAO",
+        "cityName": "青岛",
+        "cityNamePY": "qingdao",
+        "municipalCity": "青岛",
+        "hotCity": 1,
+        "province": "山东"
+    },
+    {
+        "keyID": 127,
+        "cityID": 500100,
+        "airportName": "黔江武陵山机场",
+        "airportShortName": "武陵山",
+        "cityCode": "JIQ",
+        "cityName": "黔江",
+        "cityNamePY": "qianjiang",
+        "municipalCity": "重庆",
+        "hotCity": 2,
+        "province": "重庆"
+    },
+    {
+        "keyID": 145,
+        "cityID": 520500,
+        "airportName": "凯里黄平机场",
+        "airportShortName": "黄平",
+        "cityCode": "KJH",
+        "cityName": "黔东南",
+        "cityNamePY": "qiandongnan",
+        "municipalCity": "黔东南",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 147,
+        "cityID": 520600,
+        "airportName": "荔波机场",
+        "airportShortName": "荔波",
+        "cityCode": "LLB",
+        "cityName": "黔南",
+        "cityNamePY": "qiannan",
+        "municipalCity": "黔南",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 148,
+        "cityID": 520700,
+        "airportName": "兴义机场",
+        "airportShortName": "兴义",
+        "cityCode": "ACX",
+        "cityName": "黔西南",
+        "cityNamePY": "qianxinan",
+        "municipalCity": "黔西南",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 178,
+        "cityID": 621000,
+        "airportName": "庆阳机场",
+        "airportShortName": "庆阳",
+        "cityCode": "IQN",
+        "cityName": "庆阳",
+        "cityNamePY": "qingyang",
+        "municipalCity": "庆阳",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 192,
+        "cityID": 652807,
+        "airportName": "且末机场",
+        "airportShortName": "且末",
+        "cityCode": "IQM",
+        "cityName": "且末",
+        "cityNamePY": "qiemo",
+        "municipalCity": "巴音郭楞",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 94,
+        "cityID": 371100,
+        "airportName": "山字河机场",
+        "airportShortName": "山字河",
+        "cityCode": "RIZ",
+        "cityName": "日照",
+        "cityNamePY": "rizhao",
+        "municipalCity": "日照",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 167,
+        "cityID": 540600,
+        "airportName": "日喀则和平机场",
+        "airportShortName": "和平",
+        "cityCode": "RKZ",
+        "cityName": "日喀则",
+        "cityNamePY": "rikaze",
+        "municipalCity": "日喀则",
+        "hotCity": 2,
+        "province": "西藏"
+    },
+    {
+        "keyID": 4,
+        "cityID": 130100,
+        "airportName": "石家庄正定国际机场",
+        "airportShortName": "正定",
+        "cityCode": "SJW",
+        "cityName": "石家庄",
+        "cityNamePY": "shijiazhuang",
+        "municipalCity": "石家庄",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 32,
+        "cityID": 210100,
+        "airportName": "沈阳桃仙国际机场",
+        "airportShortName": "桃仙",
+        "cityCode": "SHE",
+        "cityName": "沈阳",
+        "cityNamePY": "shenyang",
+        "municipalCity": "沈阳",
+        "hotCity": 2,
+        "province": "辽宁"
+    },
+    {
+        "keyID": 53,
+        "cityID": 310100,
+        "airportName": "上海浦东国际机场",
+        "airportShortName": "浦东",
+        "cityCode": "PVG",
+        "cityName": "上海",
+        "cityNamePY": "shanghai",
+        "municipalCity": "上海",
+        "hotCity": 1,
+        "province": "上海"
+    },
+    {
+        "keyID": 54,
+        "cityID": 310100,
+        "airportName": "上海虹桥国际机场",
+        "airportShortName": "虹桥",
+        "cityCode": "SHA",
+        "cityName": "上海",
+        "cityNamePY": "shanghai",
+        "municipalCity": "上海",
+        "hotCity": 1,
+        "province": "上海"
+    },
+    {
+        "keyID": 109,
+        "cityID": 440200,
+        "airportName": "韶关桂头机场",
+        "airportShortName": "桂头",
+        "cityCode": "HSC",
+        "cityName": "韶关",
+        "cityNamePY": "shaoguan",
+        "municipalCity": "韶关",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 110,
+        "cityID": 440300,
+        "airportName": "深圳宝安国际机场",
+        "airportShortName": "宝安",
+        "cityCode": "SZX",
+        "cityName": "深圳",
+        "cityNamePY": "shenchou",
+        "municipalCity": "深圳",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 121,
+        "cityID": 450200,
+        "airportName": "三亚凤凰国际机场",
+        "airportShortName": "凤凰",
+        "cityCode": "SYX",
+        "cityName": "三亚",
+        "cityNamePY": "sanya",
+        "municipalCity": "三亚",
+        "hotCity": 1,
+        "province": "海南"
+    },
+    {
+        "keyID": 140,
+        "cityID": 511800,
+        "airportName": "遂宁机场",
+        "airportShortName": "遂宁",
+        "cityCode": "SUN",
+        "cityName": "遂宁",
+        "cityNamePY": "suining",
+        "municipalCity": "遂宁",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 205,
+        "cityID": 420300,
+        "airportName": "十堰武当山机场",
+        "airportShortName": "武当山",
+        "cityCode": "WDS",
+        "cityName": "十堰",
+        "cityNamePY": "shiyan",
+        "municipalCity": "十堰",
+        "hotCity": 2,
+        "province": "湖北"
+    },
+    {
+        "keyID": 3,
+        "cityID": 120100,
+        "airportName": "天津滨海国际机场",
+        "airportShortName": "滨海",
+        "cityCode": "TSN",
+        "cityName": "天津",
+        "cityNamePY": "tianjin",
+        "municipalCity": "天津",
+        "hotCity": 1,
+        "province": "天津"
+    },
+    {
+        "keyID": 5,
+        "cityID": 130200,
+        "airportName": "唐山三女河机场",
+        "airportShortName": "三女河",
+        "cityCode": "TVS",
+        "cityName": "唐山",
+        "cityNamePY": "tangshan",
+        "municipalCity": "唐山",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 10,
+        "cityID": 140100,
+        "airportName": "太原武宿国际机场",
+        "airportShortName": "武宿",
+        "cityCode": "TYN",
+        "cityName": "太原",
+        "cityNamePY": "taiyuan",
+        "municipalCity": "太原",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 19,
+        "cityID": 150500,
+        "airportName": "通辽机场",
+        "airportShortName": "通辽",
+        "cityCode": "TGO",
+        "cityName": "通辽",
+        "cityNamePY": "tongliao",
+        "municipalCity": "通辽",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 40,
+        "cityID": 220500,
+        "airportName": "通化三源浦机场",
+        "airportShortName": "三源浦",
+        "cityCode": "TNH",
+        "cityName": "通化",
+        "cityNamePY": "tonghua",
+        "municipalCity": "通化",
+        "hotCity": 2,
+        "province": "吉林"
+    },
+    {
+        "keyID": 70,
+        "cityID": 331000,
+        "airportName": "台州路桥机场",
+        "airportShortName": "路桥",
+        "cityCode": "HYN",
+        "cityName": "台州",
+        "cityNamePY": "taizhou",
+        "municipalCity": "台州",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 149,
+        "cityID": 520800,
+        "airportName": "铜仁凤凰机场",
+        "airportShortName": "凤凰",
+        "cityCode": "TEN",
+        "cityName": "铜仁",
+        "cityNamePY": "tongren",
+        "municipalCity": "铜仁",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 153,
+        "cityID": 530201,
+        "airportName": "腾冲驼峰机场",
+        "airportShortName": "驼峰",
+        "cityCode": "TCZ",
+        "cityName": "腾冲",
+        "cityNamePY": "tengchong",
+        "municipalCity": "保山",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 176,
+        "cityID": 620500,
+        "airportName": "天水麦积山机场",
+        "airportShortName": "麦积山",
+        "cityCode": "THQ",
+        "cityName": "天水",
+        "cityNamePY": "tianshui",
+        "municipalCity": "天水",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 189,
+        "cityID": 652100,
+        "airportName": "吐鲁番交河机场",
+        "airportShortName": "交河",
+        "cityCode": "TLQ",
+        "cityName": "吐鲁番",
+        "cityNamePY": "tulufan",
+        "municipalCity": "吐鲁番",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 199,
+        "cityID": 654200,
+        "airportName": "塔城机场",
+        "airportShortName": "塔城",
+        "cityCode": "TCG",
+        "cityName": "塔城",
+        "cityNamePY": "tacheng",
+        "municipalCity": "塔城",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 24,
+        "cityID": 151003,
+        "airportName": "乌兰浩特机场",
+        "airportShortName": "乌兰浩特",
+        "cityCode": "HLH",
+        "cityName": "乌兰浩特",
+        "cityNamePY": "wulanhaote",
+        "municipalCity": "兴安盟",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 31,
+        "cityID": 160100,
+        "airportName": "乌海机场",
+        "airportShortName": "乌海",
+        "cityCode": "WUA",
+        "cityName": "乌海",
+        "cityNamePY": "wuhai",
+        "municipalCity": "乌海",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 57,
+        "cityID": 320320,
+        "airportName": "苏南硕放国际机场",
+        "airportShortName": "苏南硕放",
+        "cityCode": "WUX",
+        "cityName": "无锡",
+        "cityNamePY": "wuxi",
+        "municipalCity": "无锡",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 66,
+        "cityID": 330300,
+        "airportName": "温州龙湾国际机场",
+        "airportShortName": "龙湾",
+        "cityCode": "WNZ",
+        "cityName": "温州",
+        "cityNamePY": "wenzhou",
+        "municipalCity": "温州",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 91,
+        "cityID": 370700,
+        "airportName": "潍坊机场",
+        "airportShortName": "潍坊",
+        "cityCode": "WEF",
+        "cityName": "潍坊",
+        "cityNamePY": "weifang",
+        "municipalCity": "潍坊",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 93,
+        "cityID": 371000,
+        "airportName": "威海国际机场",
+        "airportShortName": "威海",
+        "cityCode": "WEH",
+        "cityName": "威海",
+        "cityNamePY": "weihai",
+        "municipalCity": "威海",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 99,
+        "cityID": 420100,
+        "airportName": "武汉天河国际机场",
+        "airportShortName": "天河",
+        "cityCode": "WUH",
+        "cityName": "武汉",
+        "cityNamePY": "wuhan",
+        "municipalCity": "武汉",
+        "hotCity": 1,
+        "province": "湖北"
+    },
+    {
+        "keyID": 123,
+        "cityID": 450400,
+        "airportName": "梧州长洲岛机场",
+        "airportShortName": "长洲岛",
+        "cityCode": "WUZ",
+        "cityName": "梧州",
+        "cityNamePY": "wuzhou",
+        "municipalCity": "梧州",
+        "hotCity": 2,
+        "province": "广西"
+    },
+    {
+        "keyID": 128,
+        "cityID": 500100,
+        "airportName": "万州五桥机场",
+        "airportShortName": "万州",
+        "cityCode": "WXN",
+        "cityName": "万州",
+        "cityNamePY": "wanzhou",
+        "municipalCity": "重庆",
+        "hotCity": 2,
+        "province": "重庆"
+    },
+    {
+        "keyID": 160,
+        "cityID": 531400,
+        "airportName": "文山普者黑机场",
+        "airportShortName": "普者黑",
+        "cityCode": "WNH",
+        "cityName": "文山",
+        "cityNamePY": "wenshan",
+        "municipalCity": "文山",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 187,
+        "cityID": 650100,
+        "airportName": "乌鲁木齐地窝堡国际机场",
+        "airportShortName": "地窝堡",
+        "cityCode": "URC",
+        "cityName": "乌鲁木齐",
+        "cityNamePY": "wulumuqi",
+        "municipalCity": "乌鲁木齐",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 8,
+        "cityID": 130500,
+        "airportName": "邢台褡裢机场",
+        "airportShortName": "褡裢",
+        "cityCode": "XNT",
+        "cityName": "邢台",
+        "cityNamePY": "xingtai",
+        "municipalCity": "邢台",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 26,
+        "cityID": 151101,
+        "airportName": "锡林浩特机场",
+        "airportShortName": "锡林浩特",
+        "cityCode": "XIL",
+        "cityName": "锡林浩特",
+        "cityNamePY": "xilinhaote",
+        "municipalCity": "锡林郭勒盟",
+        "hotCity": 2,
+        "province": "内蒙古"
+    },
+    {
+        "keyID": 56,
+        "cityID": 320300,
+        "airportName": "徐州观音机场",
+        "airportShortName": "观音",
+        "cityCode": "XUZ",
+        "cityName": "徐州",
+        "cityNamePY": "xuzhou",
+        "municipalCity": "徐州",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 77,
+        "cityID": 350200,
+        "airportName": "厦门高崎国际机场",
+        "airportShortName": "高崎",
+        "cityCode": "XMN",
+        "cityName": "厦门",
+        "cityNamePY": "xiamen",
+        "municipalCity": "厦门",
+        "hotCity": 1,
+        "province": "福建"
+    },
+    {
+        "keyID": 101,
+        "cityID": 420600,
+        "airportName": "襄阳刘集机场",
+        "airportShortName": "刘集",
+        "cityCode": "XFN",
+        "cityName": "襄阳",
+        "cityNamePY": "xiangyang",
+        "municipalCity": "襄阳",
+        "hotCity": 2,
+        "province": "湖北"
+    },
+    {
+        "keyID": 136,
+        "cityID": 511204,
+        "airportName": "西昌青山机场",
+        "airportShortName": "青山",
+        "cityCode": "XIC",
+        "cityName": "西昌",
+        "cityNamePY": "xichang",
+        "municipalCity": "凉山",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 161,
+        "cityID": 531500,
+        "airportName": "西双版纳嘎洒国际机场",
+        "airportShortName": "嘎洒",
+        "cityCode": "JHG",
+        "cityName": "西双版纳",
+        "cityNamePY": "xishuangbanna",
+        "municipalCity": "西双版纳",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 168,
+        "cityID": 610100,
+        "airportName": "西安咸阳国际机场",
+        "airportShortName": "咸阳",
+        "cityCode": "XIY",
+        "cityName": "西安",
+        "cityNamePY": "xian",
+        "municipalCity": "西安",
+        "hotCity": 1,
+        "province": "陕西"
+    },
+    {
+        "keyID": 181,
+        "cityID": 630100,
+        "airportName": "西宁曹家堡机场",
+        "airportShortName": "曹家堡",
+        "cityCode": "XNN",
+        "cityName": "西宁",
+        "cityNamePY": "xining",
+        "municipalCity": "西宁",
+        "hotCity": 2,
+        "province": "青海"
+    },
+    {
+        "keyID": 198,
+        "cityID": 654006,
+        "airportName": "新源那拉提机场",
+        "airportShortName": "那拉提",
+        "cityCode": "NLT",
+        "cityName": "新源",
+        "cityNamePY": "xinyuan",
+        "municipalCity": "伊犁",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 13,
+        "cityID": 140800,
+        "airportName": "运城机场",
+        "airportShortName": "运城",
+        "cityCode": "YCU",
+        "cityName": "运城",
+        "cityNamePY": "yuncheng",
+        "municipalCity": "运城",
+        "hotCity": 2,
+        "province": "山西"
+    },
+    {
+        "keyID": 42,
+        "cityID": 220900,
+        "airportName": "延吉朝阳川机场",
+        "airportShortName": "朝阳川",
+        "cityCode": "YNJ",
+        "cityName": "延边",
+        "cityNamePY": "yanbian",
+        "municipalCity": "延边",
+        "hotCity": 2,
+        "province": "吉林"
+    },
+    {
+        "keyID": 47,
+        "cityID": 230700,
+        "airportName": "伊春林都机场",
+        "airportShortName": "明月山",
+        "cityCode": "LDS",
+        "cityName": "伊春",
+        "cityNamePY": "yichun",
+        "municipalCity": "伊春",
+        "hotCity": 2,
+        "province": "黑龙江"
+    },
+    {
+        "keyID": 62,
+        "cityID": 320900,
+        "airportName": "盐城南洋机场",
+        "airportShortName": "南洋",
+        "cityCode": "YNZ",
+        "cityName": "盐城",
+        "cityNamePY": "yancheng",
+        "municipalCity": "盐城",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 63,
+        "cityID": 321000,
+        "airportName": "扬州泰州机场",
+        "airportShortName": "泰州",
+        "cityCode": "YTY",
+        "cityName": "扬州",
+        "cityNamePY": "yangzhou",
+        "municipalCity": "扬州",
+        "hotCity": 2,
+        "province": "江苏"
+    },
+    {
+        "keyID": 86,
+        "cityID": 360900,
+        "airportName": "宜春明月山机场",
+        "airportShortName": "林都",
+        "cityCode": "YIC",
+        "cityName": "宜春",
+        "cityNamePY": "yichun",
+        "municipalCity": "宜春",
+        "hotCity": 2,
+        "province": "江西"
+    },
+    {
+        "keyID": 90,
+        "cityID": 370600,
+        "airportName": "烟台莱山国际机场",
+        "airportShortName": "蓬莱",
+        "cityCode": "YNT",
+        "cityName": "烟台",
+        "cityNamePY": "yantai",
+        "municipalCity": "烟台",
+        "hotCity": 2,
+        "province": "山东"
+    },
+    {
+        "keyID": 100,
+        "cityID": 420500,
+        "airportName": "宜昌三峡机场",
+        "airportShortName": "三峡",
+        "cityCode": "YIH",
+        "cityName": "宜昌",
+        "cityNamePY": "yichang",
+        "municipalCity": "宜昌",
+        "hotCity": 2,
+        "province": "湖北"
+    },
+    {
+        "keyID": 106,
+        "cityID": 431100,
+        "airportName": "永州零陵机场",
+        "airportShortName": "零陵",
+        "cityCode": "LLF",
+        "cityName": "永州",
+        "cityNamePY": "yongzhou",
+        "municipalCity": "永州",
+        "hotCity": 2,
+        "province": "湖南"
+    },
+    {
+        "keyID": 141,
+        "cityID": 512000,
+        "airportName": "宜宾菜坝机场",
+        "airportShortName": "菜坝",
+        "cityCode": "YBP",
+        "cityName": "宜宾",
+        "cityNamePY": "yibin",
+        "municipalCity": "宜宾",
+        "hotCity": 2,
+        "province": "四川"
+    },
+    {
+        "keyID": 169,
+        "cityID": 610600,
+        "airportName": "延安二十里堡机场",
+        "airportShortName": "二十里堡",
+        "cityCode": "ENY",
+        "cityName": "延安",
+        "cityNamePY": "yanan",
+        "municipalCity": "延安",
+        "hotCity": 2,
+        "province": "陕西"
+    },
+    {
+        "keyID": 171,
+        "cityID": 610800,
+        "airportName": "榆林榆阳机场",
+        "airportShortName": "榆阳",
+        "cityCode": "UYN",
+        "cityName": "榆林",
+        "cityNamePY": "yulin",
+        "municipalCity": "榆林",
+        "hotCity": 2,
+        "province": "陕西"
+    },
+    {
+        "keyID": 182,
+        "cityID": 632700,
+        "airportName": "玉树巴塘机场",
+        "airportShortName": "巴塘",
+        "cityCode": "YUS",
+        "cityName": "玉树",
+        "cityNamePY": "yushu",
+        "municipalCity": "玉树",
+        "hotCity": 2,
+        "province": "青海"
+    },
+    {
+        "keyID": 184,
+        "cityID": 640100,
+        "airportName": "银川河东国际机场",
+        "airportShortName": "河东",
+        "cityCode": "INC",
+        "cityName": "银川",
+        "cityNamePY": "yinchuan",
+        "municipalCity": "银川",
+        "hotCity": 2,
+        "province": "宁夏"
+    },
+    {
+        "keyID": 197,
+        "cityID": 654010,
+        "airportName": "伊宁机场",
+        "airportShortName": "伊宁",
+        "cityCode": "YIN",
+        "cityName": "伊宁市",
+        "cityNamePY": "yiningshi",
+        "municipalCity": "伊犁",
+        "hotCity": 2,
+        "province": "新疆"
+    },
+    {
+        "keyID": 9,
+        "cityID": 130700,
+        "airportName": "张家口宁远机场",
+        "airportShortName": "宁远",
+        "cityCode": "ZQZ",
+        "cityName": "张家口",
+        "cityNamePY": "zhangjiakou",
+        "municipalCity": "张家口",
+        "hotCity": 2,
+        "province": "河北"
+    },
+    {
+        "keyID": 69,
+        "cityID": 330900,
+        "airportName": "舟山普陀山机场",
+        "airportShortName": "普陀山",
+        "cityCode": "HSN",
+        "cityName": "舟山",
+        "cityNamePY": "zhoushan",
+        "municipalCity": "舟山",
+        "hotCity": 2,
+        "province": "浙江"
+    },
+    {
+        "keyID": 96,
+        "cityID": 410100,
+        "airportName": "郑州新郑国际机场",
+        "airportShortName": "新郑",
+        "cityCode": "CGO",
+        "cityName": "郑州",
+        "cityNamePY": "zhengzhou",
+        "municipalCity": "郑州",
+        "hotCity": 1,
+        "province": "河南"
+    },
+    {
+        "keyID": 105,
+        "cityID": 430800,
+        "airportName": "张家界荷花国际机场",
+        "airportShortName": "荷花",
+        "cityCode": "DYG",
+        "cityName": "张家界",
+        "cityNamePY": "zhangjiajie",
+        "municipalCity": "张家界",
+        "hotCity": 2,
+        "province": "湖南"
+    },
+    {
+        "keyID": 111,
+        "cityID": 440400,
+        "airportName": "珠海金湾机场",
+        "airportShortName": "金湾",
+        "cityCode": "ZUH",
+        "cityName": "珠海",
+        "cityNamePY": "zhuhai",
+        "municipalCity": "珠海",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 113,
+        "cityID": 440800,
+        "airportName": "湛江机场",
+        "airportShortName": "湛江",
+        "cityCode": "ZHA",
+        "cityName": "湛江",
+        "cityNamePY": "zhanjiang",
+        "municipalCity": "湛江",
+        "hotCity": 2,
+        "province": "广东"
+    },
+    {
+        "keyID": 150,
+        "cityID": 520900,
+        "airportName": "遵义新舟机场",
+        "airportShortName": "新舟",
+        "cityCode": "ZYI",
+        "cityName": "遵义",
+        "cityNamePY": "zunyi",
+        "municipalCity": "遵义",
+        "hotCity": 2,
+        "province": "贵州"
+    },
+    {
+        "keyID": 162,
+        "cityID": 531700,
+        "airportName": "昭通机场",
+        "airportShortName": "昭通",
+        "cityCode": "ZAT",
+        "cityName": "昭通",
+        "cityNamePY": "zhaotong",
+        "municipalCity": "昭通",
+        "hotCity": 2,
+        "province": "云南"
+    },
+    {
+        "keyID": 177,
+        "cityID": 620700,
+        "airportName": "张掖甘州机场",
+        "airportShortName": "甘州",
+        "cityCode": "YZY",
+        "cityName": "张掖",
+        "cityNamePY": "zhangye",
+        "municipalCity": "张掖",
+        "hotCity": 2,
+        "province": "甘肃"
+    },
+    {
+        "keyID": 186,
+        "cityID": 640500,
+        "airportName": "中卫沙坡头机场",
+        "airportShortName": "沙坡头",
+        "cityCode": "ZHY",
+        "cityName": "中卫",
+        "cityNamePY": "zhongwei",
+        "municipalCity": "中卫",
+        "hotCity": 2,
+        "province": "宁夏"
+    }
 ]

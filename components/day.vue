@@ -24,6 +24,7 @@ import formatter from "@/common/formatter.js";
 export default {
   data() {
     return {
+      urlTime: "",
       dayData: [],
       activeClass: 0
     };
@@ -36,6 +37,17 @@ export default {
       return value;
     }
   },
+  created() {
+    uni.getStorage({
+      key: "showTime",
+      success: res => {
+        // this.urlTime = res.data.urlTime;
+        this.urlTime = formatter.formatDate(res.data.urlTime, "yyyy-MM-dd");
+        console.log("this.urlTime", this.urlTime);
+      }
+    });
+  },
+
   methods: {
     createdDay(dayCount = 60) {
       // 获得星期几
@@ -56,15 +68,20 @@ export default {
 
       // 生成 日期
       const arr = [];
+      const indexArr = [];
       for (let i = 0; i < dayCount; i++) {
         const date = new Date();
         date.setDate(date.getDate() + i);
         const day = formatter.formatDate(date, "yyyy-MM-dd");
         const weekDay = getWeekByDay(day);
         // 需要格式
-        // day = formatter.formatDate(date, "MM/dd")
         arr.push([day, weekDay]);
+        indexArr.push(day);
       }
+      this.activeClass = indexArr.indexOf(this.urlTime);
+
+      console.log("createdDay ", indexArr.indexOf(this.urlTime));
+
       return arr;
     },
     getItme(index, item) {
