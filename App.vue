@@ -14,8 +14,13 @@ export default {
 
 <style lang="scss">
 page {
-  margin-top: 30px;
+  margin-top: var(--status-bar-height);
 }
+
+[v-cloak] {
+    display: none !important;
+}
+
 
 .flex_y {
   display: flex;

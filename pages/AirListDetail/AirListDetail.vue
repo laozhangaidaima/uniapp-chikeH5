@@ -1,45 +1,63 @@
 <template>
-  <view>
+  <view  v-cloak>
     <!-- 顶部 -->
     <view
-      style="background-color:#02a6ff;height: 160px;line-height: 20px;	 "
       class="flex_x flex-x-center flex-y-center"
+      style="background: linear-gradient(to right, #02a6ff, #3e5ceb);"
     >
-      <view class="top">
+      <view class="card">
+        <!-- 第一行 -->
         <u-row gutter="16" style="margin-bottom: 20px;margin-top: 10px;">
           <u-col span="9">
-            <view>{{airCurData.fromairportShortName}}--{{airCurData.toairportShortName}}</view>
+            <view class="flex_x">
+              <image 
+                :src="src"
+                style="margin-top: 1px;margin-right: 6px;width:29.167rpx;height:29.167rpx"
+              ></image>
+              <view
+                style="color:#00000"
+              >{{airCurData.fromairportShortName}}--{{airCurData.toairportShortName}}</view>
+            </view>
           </u-col>
-          <u-col span="3" style="text-align: right;">
-            <view>{{airCurData.flightTime}}</view>
+          <u-col span="3" style="text-align: right;color:#999999 ">
+            <view>{{"约"+ airCurData.flightTime}}</view>
           </u-col>
         </u-row>
+        <!-- 第二行 -->
         <u-row gutter="16" style="margin-bottom: 10px;">
           <u-col span="3">
             <view class="flex_y">
               <!--  -->
-              <view class>
+              <view style="color:#999999">
                 {{airCurData.depDate|formatTime}}
                 {{airCurData.depDate|formatWeekDay}}
               </view>
-              <view class>{{airCurData.depDate|formatHour}}</view>
+              <view style="text-align: end;margin-right: 6px; ">{{airCurData.depDate|formatHour}}</view>
               <!--  -->
-              <view class>
+              <view style="color:#999999;margin-top:24px ">
                 {{airCurData.arrDate|formatTime}}
                 {{airCurData.arrDate|formatWeekDay}}
               </view>
-              <view class>{{airCurData.arrDate|formatHour}}</view>
+              <view style="text-align: end;margin-right: 6px; ">{{airCurData.arrDate|formatHour}}</view>
             </view>
           </u-col>
-          <u-col span="6">
-            <view class="flex_y">
-              <view class>{{airCurData.orgAirportName}}</view>
-              <view class>{{airCurData.dstAirportName}}</view>
-            </view>
+
+          <u-col span="1">
+            <image  style="margin-top: 16px;width:10px;height:66px " :src="src2" ></image>
           </u-col>
+
           <u-col span="3">
-            <view class="flex_y" style="text-align: right;">
-              <view class>{{airCurData.carrierShortName}}{{airCurData.flightNo}}</view>
+            <view style="height:60px">
+              <view>{{airCurData.orgAirportName}}</view>
+              <view style="margin-top: 42px;">{{airCurData.dstAirportName}}</view>
+            </view>
+          </u-col>
+          <u-col span="5">
+            <view class="flex_y" style="text-align: right;color:#999999 ">
+              <view class>
+                <image  :src="airCurData.airLogo" style="display: inline-block;margin-right: 4px;width:12px;height:12px " ></image>
+                {{airCurData.carrierShortName}}{{airCurData.flightNo}}
+              </view>
               <view class>{{airCurData.planeStyle}}</view>
               <view class>有餐食</view>
             </view>
@@ -57,7 +75,7 @@
     >
       <u-row gutter="16">
         <u-col span="12">
-          <view style="color: #fff;background-color: #D1BD98;width: 60px; ">{{item.productTypeName}}</view>
+          <view style="color: #fff;background-color: #D1BD98;width: 60px;text-align:center">{{item.productTypeName}}</view>
         </u-col>
       </u-row>
 
@@ -88,7 +106,10 @@ export default {
     return {
       airMsgIndex: 0,
       airMsgData: {},
-      airCurData: {}
+      airCurData: {},
+      src: "/static/icon_flight_cabin.png",
+      src2:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAC5CAYAAADZAESwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADHElEQVR42u2cv08UQRTHP2/ggoIJYMIZgyFUEIiEqL3hD/A/ITE2llSWNjb+N1poDRricQiVIViAMd4ZIIHcsjZvyTDMsXt7dwLhvWRzMzs/PvNm5uY7zT5J05R6vU6SJJyenhIxB1SBcWAMGNL3x0AD+APsA9HGAAsLCzjnGKS9DQGTwHSb8rv6PATmgR/ATx1E1NrBqsAsUKG4TevgttTTQrBHwEzw7gmwpL8P9N0e8BX4BHzRdxXgMbAN7ObBqgFoCngFLEYGNanPC2AdeAfsaNkMcBJ66Lz0PWDOyy8C79uAQovVndM+o7BZYMDz6A0w3MGaDWubKc0PaJ8XYA4Y1bQAr4EROrcRbSuaH/Udct5a+ZthnvI2r30Q9p3Bxr3CJbo3v4/xEDYWeNat+X2MhbChmNtdWDU4ic7BUq/whD6Z8w7VzH73oN9fZwDnjkPYX6/i91Kjds5/alkaaIrIOVjDa/exB559yBIi0gg92/MqrgL1Dj3xi+rAmpffC2EJ0PQ2y1vgsIRHh9o223BNEUliZ+OWQtHTewU4KkoRkSMRWRGRHRFBRBIR2dKyC7ADYNPLrwPLRaZU6yxrm8w2gYMMFNOzfRW+Gc/Dl8Az4DnwFJgAWlr3G/BZ18j/r27H1Dqm1Lv6x55TmUh106wW8DBRjwpfCzIPj1SPRgsuW1PX/aDTC0+2hmvq3QRwX8F39NqWXeUaemIkucNJ07Svz8bGxlna8R/NYDcPNthvQLYTr59ntVotd+R5unc1a5Y3spgz3vX6Bq9ZAYXOLY8ptZ0gBrt5MLFpvEVKnXe23appTG2DGMxgpmc2jQYzPbNpNJjBTM8MZjDTM4MZzGCmZwYzmOmZwQxmMNMzgxnM9MxgBjM9s2k0mOmZTaPBDGZ6ZmtmMNMzgxnMJMam0WA9scHsW8xWq0WaplQqldiAuooPcga7pMzig1h8EIsP0pFZfJALU1rWbkF8EL/vnsUHCcz/VLkZwvoWH8Tvu3R8kEvs6uKD4EVq6Fl8EK274p38ifYZPYj7Eh/kMj2z+CAxu17xQaTE1/2l7R952lhDzR0C3wAAAABJRU5ErkJggg=="
     };
   },
   filters: {
@@ -136,18 +157,39 @@ export default {
         this.airCurData = this.airMsgData[this.airMsgIndex];
       }
     });
-  }
+  },
+
 };
 </script>
 
 <style lang="scss">
-
-
 page {
-  .top {
-    background-color: #ffffff;
-    border-radius: 12.5rpx;
-    width: 94%;
+  .card {
+    background: #ffffff;
+    width: 86%;
+    padding: 0 15px;
+    margin: 10px auto;
+    position: relative;
+    border-radius: 3px;
+  }
+  .card::before,
+  .card::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 144.5px / 2 - 10px;
+    z-index: 10000;
+  }
+  .card::before {
+    left: -10px;
+    background-color: #02a6ff;
+  }
+  .card::after {
+    right: -10px;
+    background-color: #3e5ceb;
   }
 }
 </style>
