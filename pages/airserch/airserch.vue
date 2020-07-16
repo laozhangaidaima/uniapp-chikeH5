@@ -8,11 +8,11 @@
       <!-- 机票信息 -->
 			<view style="width:90%;margin:0 auto ">
 			<!-- 第一排 -->
-				<u-row gutter="16" style="align-items: start;padding-top: 20.833rpx; ">
+				<u-row gutter="16" style="align-items: start;padding-top: 41.667rpx;">
 					<u-col span="3">
 						<view class="flex_y">
 							<text class="font1">{{ item.depDate}}</text>
-							<text class="font2" style="margin-top: 10px;">{{ item.fromairportShortName}}</text>
+							<text class="font2" style="margin-top: 20.833rpx;">{{ item.fromairportShortName}}</text>
 						</view>
 					</u-col>
 					<u-col span="3" class="font2">
@@ -21,15 +21,15 @@
 					</u-col>
 					<u-col span="3" class="flex_y">
 						<text class="font1">{{ item.arrDate}}</text>
-						<text class="font2" style="margin-top: 10px;">{{ item.toairportShortName}}</text>
+						<text class="font2" style="margin-top: 20.833rpx;">{{ item.toairportShortName}}</text>
 					</u-col>
-					<u-col span="3" class="font3" style="display: flex;align-items: center;margin-top: 18px; ">{{"￥" +item.priceFare+"起" }}</u-col>
+					<u-col span="3" class="font3" style="display: flex;align-items: center;margin-top: 37.5rpx; ">{{"￥" +item.priceFare+"起" }}</u-col>
 				</u-row>
 				<!-- 第二排 -->
-				<u-row gutter="16" style="margin-top: 10px;width:90%;padding-bottom: 10px; " class="font2">
-					<u-image width="12px" height="12px" :src="item.airLogo" style="margin-right: 8.33rpx;" :fade="false"></u-image>
-          {{item.flightNo}}<text style="padding:0 3px;">|</text>
-          {{item.planeStyle}}<text style="padding:0 3px;">|</text>
+				<u-row gutter="16" style="margin-top: 20.833rpx;width:90%;padding-bottom: 41.667rpx; " class="font2">
+					<u-image width="25rpx" height="25rpx" :src="item.airLogo" style="margin-right: 8.33rpx;" :fade="false"></u-image>
+          {{item.flightNo}}<text style="padding:0 6.25rpx;">|</text>
+          {{item.planeStyle}}<text style="padding:0 6.25rpx;">|</text>
           {{"有餐食"}}
 				</u-row>
 			</view>
@@ -193,7 +193,7 @@
 <style lang="scss">
 	page {
 		.splitLine{
-     width: 750rpx; height:6px;background-color: #F2F6FC;
+     width: 750rpx; height:12.5rpx;background-color: #F2F6FC;
     }
 
 
@@ -208,9 +208,9 @@
 			line-height: 25rpx;
 
 			.img {
-				height: 6px;
-				width: 80px;
-				margin-left: -16px;
+				height: 12.5rpx;
+				width: 166.667rpx;
+				margin-left: -33.333rpx;
 			}
 		}
 

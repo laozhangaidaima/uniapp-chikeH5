@@ -1,17 +1,18 @@
 <template>
   <view>
-    <view class="top">
+    <view class="top"  >
       <view
         v-for="(item,index) in dayData"
         :key="index"
         :class="activeClass == index ? 'active':''"
+        style="height:112.5rpx "
       >
         <view
           class="son"
           @click="getItme(index,item[0])"
           :style="{'color':activeClass == index ?'#1b86f7':'#ffffff'} "
         >
-          <view style="margin-bottom: 6px;">{{item[0]|formatTime}}</view>
+          <view style="margin-bottom: 12.5rpx;">{{item[0]|formatTime}}</view>
           <view>{{item[1]}}</view>
         </view>
       </view>
@@ -115,9 +116,10 @@ page {
       font-weight: bolder;
     }
     .son {
-      width: 60px;
+      width: 137.5rpx;
       text-align: center;
       color: #ffffff;
+      margin-top: 12.5rpx;
     }
   }
 }

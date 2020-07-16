@@ -18,10 +18,9 @@
       </view>
       <view class="underLine"></view>
 
-      <view class="card1">
-        <u-calendar v-model="show" :mode="mode" :max-date="maxDate" @change="change"></u-calendar>
-        <text @click="show = true" class="startData">{{searchData.showTime}} </text>
-        <text class="startData2" @click="show = true">{{searchData.weekDay}}</text>
+      <view class="card1" @click="show = true">
+        <text  class="startData">{{searchData.showTime}} </text>
+        <text class="startData2" >{{searchData.weekDay}}</text>
       </view>
       <view class="underLine"></view>
 
@@ -29,11 +28,15 @@
         <u-button type="primary" @click="toSerch" class="search">搜索</u-button>
       </view>
     </view>
+    <!-- 时间选择控件 -->
+        <u-calendar v-model="show" :mode="mode" :min-date="minDate"   :max-date="maxDate" @change="change"></u-calendar>
+
   </view>
 </template>
 
 <script>
 import { getWeekByDay } from "common/util.js";
+import formatter from "@/common/formatter.js";
 
 export default {
   data() {
@@ -44,6 +47,10 @@ export default {
       show: false,
       mode: "date",
       maxDate: "2020-9-20",
+      // maxDate: getDateXHL(10),
+
+      minDate: formatter.formatDate(new Date(), "yyyy-MM-dd"),
+     
       searchData: {
         showTime: "出发时间",
         arrCity: "出发城市",
@@ -72,8 +79,26 @@ export default {
         this.searchData.weekDay = res.data.weekDay;
       }
     });
+
+
+    this.maxDate= this.getDateXHL(60)
   },
   methods: {
+    getDateXHL(num) {
+    var date = new Date();
+    var dateNumber = date.getTime();
+    var differ = num * 24 * 60 * 60 * 1000;
+    var needDateNumber = new Date(dateNumber + differ);
+    var year = needDateNumber.getFullYear();
+    var month = needDateNumber.getMonth() + 1;
+    var day = needDateNumber.getDate();
+    var monthX = month < 10 ? "0" + month : month;
+    var dayX = day < 10 ? "0" + day : day;
+    var nowDate = year + "-" + monthX + "-" + dayX;
+    return nowDate;
+},
+
+
     toCityPick(city) {
       uni.navigateTo({
         url: "/pages/cityPick/cityPick?cityType=" + city
@@ -103,6 +128,16 @@ export default {
         data: data,
         success: function() {}
       });
+
+      // 获取时间
+        uni.getStorage({
+      key: "showTime",
+      success: res => {
+        this.searchData.showTime = res.data.showTime;
+        this.searchData.weekDay = res.data.weekDay;
+      }
+    });
+
     }
   }
 };
@@ -146,8 +181,8 @@ page {
       .card1 {
         width: 90%;
         margin: 0 auto;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding-top: 45.833rpx;
+        padding-bottom: 45.833rpx;
       }
       .search {
         background: linear-gradient(to right, #ff9536, #ff7843);
