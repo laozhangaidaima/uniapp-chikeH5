@@ -1,6 +1,7 @@
 <template>
-  <view class="content">
-    <view class="flex_x">
+
+  <view class="content" :style="{ height: autoHeight,}">
+    <view class="flex_x" style="margin-top:20.833rpx">
       <u-subsection
         :current="1"
         :list="['因公出行', '私人旅游']"
@@ -13,14 +14,15 @@
     <view class="cardBackgroud">
       <view class="card1 flex_x flex_x flex-space-between">
         <text class="btn3" @click="toCityPick('fromCity')">{{searchData.fromCity}}</text>
-        <image :src="src" style="margin-top: 6.25rpx;width:64.583rpx;height:64.583rpx"  ></image>
+
+        <image :src="src" style="margin-top: 6.25rpx;width:64.583rpx;height:64.583rpx"></image>
         <text class="btn3" @click="toCityPick('arrCity')">{{searchData.arrCity}}</text>
       </view>
       <view class="underLine"></view>
 
       <view class="card1" @click="show = true">
-        <text  class="startData">{{searchData.showTime}} </text>
-        <text class="startData2" >{{searchData.weekDay}}</text>
+        <text class="startData">{{searchData.showTime}}</text>
+        <text class="startData2">{{searchData.weekDay}}</text>
       </view>
       <view class="underLine"></view>
 
@@ -29,8 +31,13 @@
       </view>
     </view>
     <!-- 时间选择控件 -->
-        <u-calendar v-model="show" :mode="mode" :min-date="minDate"   :max-date="maxDate" @change="change"></u-calendar>
-
+    <u-calendar
+      v-model="show"
+      :mode="mode"
+      :min-date="minDate"
+      :max-date="maxDate"
+      @change="change"
+    ></u-calendar>
   </view>
 </template>
 
@@ -42,24 +49,29 @@ export default {
   data() {
     return {
       title: "Hello",
-      src:
-        "/static/flight_exchange.png",
+      src: "/static/flight_exchange.png",
       show: false,
       mode: "date",
       maxDate: "2020-9-20",
       // maxDate: getDateXHL(10),
 
       minDate: formatter.formatDate(new Date(), "yyyy-MM-dd"),
-     
+
       searchData: {
         showTime: "出发时间",
         arrCity: "出发城市",
         fromCity: "到达城市"
-      }
+	  },
+	  autoHeight:'1041.667rpx',
     };
   },
   onLoad() {},
   onShow() {
+	//   动态高度
+	   const res = uni.getSystemInfoSync();
+	  this.autoHeight = (res.windowHeight-res.statusBarHeight)  + 'px'
+	
+
     uni.getStorage({
       key: "fromCity",
       success: res => {
@@ -80,24 +92,25 @@ export default {
       }
     });
 
+	this.maxDate = this.getDateXHL(60);
+	
 
-    this.maxDate= this.getDateXHL(60)
+
   },
   methods: {
     getDateXHL(num) {
-    var date = new Date();
-    var dateNumber = date.getTime();
-    var differ = num * 24 * 60 * 60 * 1000;
-    var needDateNumber = new Date(dateNumber + differ);
-    var year = needDateNumber.getFullYear();
-    var month = needDateNumber.getMonth() + 1;
-    var day = needDateNumber.getDate();
-    var monthX = month < 10 ? "0" + month : month;
-    var dayX = day < 10 ? "0" + day : day;
-    var nowDate = year + "-" + monthX + "-" + dayX;
-    return nowDate;
-},
-
+      var date = new Date();
+      var dateNumber = date.getTime();
+      var differ = num * 24 * 60 * 60 * 1000;
+      var needDateNumber = new Date(dateNumber + differ);
+      var year = needDateNumber.getFullYear();
+      var month = needDateNumber.getMonth() + 1;
+      var day = needDateNumber.getDate();
+      var monthX = month < 10 ? "0" + month : month;
+      var dayX = day < 10 ? "0" + day : day;
+      var nowDate = year + "-" + monthX + "-" + dayX;
+      return nowDate;
+    },
 
     toCityPick(city) {
       uni.navigateTo({
@@ -122,6 +135,7 @@ export default {
         urlTime: e.result + " 00:00:00",
         weekDay: weekDay
       };
+      //
       //  出发时间
       uni.setStorage({
         key: "showTime",
@@ -130,14 +144,24 @@ export default {
       });
 
       // 获取时间
-        uni.getStorage({
-      key: "showTime",
-      success: res => {
-        this.searchData.showTime = res.data.showTime;
-        this.searchData.weekDay = res.data.weekDay;
-      }
-    });
+      uni.getStorage({
+        key: "showTime",
+        success: res => {
+          this.searchData.showTime = res.data.showTime;
+          this.searchData.weekDay = res.data.weekDay;
+        }
+      });
 
+      // 同步
+      // 存
+      uni.setStorageSync("showTime", data);
+      // 取
+      const res = uni.getStorageSync("showTime");
+      if (res) {
+        console.log("change -> res", res);
+        this.searchData.showTime = res.showTime;
+        this.searchData.weekDay = res.weekDay;
+      }
     }
   }
 };
@@ -145,19 +169,25 @@ export default {
 
 <style lang="scss" scoped>
 page {
-  height: 100%;
-  background-image: url("/static/airbg.jpg");
-  background-size: cover;
+ 
+
   .content {
-    height: 100%;
+	   background: url("/static/airbg.jpg");
+  background-size: cover;
+//    height:100vh;
+
+
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 40rpx;
     padding-right: 40rpx;
+
     .btn {
       border-radius: 41.66rpx;
     }
+
     .btn2 {
       width: 145.83rpx;
       height: 72.91rpx;
@@ -169,6 +199,7 @@ page {
       position: absolute;
       right: 41.667rpx;
     }
+
     .cardBackgroud {
       width: 100%;
       margin-top: 62.5rpx;
@@ -178,21 +209,25 @@ page {
       overflow: hidden;
       color: #303133;
       transition: 0.3s;
+
       .card1 {
         width: 90%;
         margin: 0 auto;
         padding-top: 45.833rpx;
         padding-bottom: 45.833rpx;
       }
+
       .search {
         background: linear-gradient(to right, #ff9536, #ff7843);
       }
+
       .underLine {
         display: block;
         height: 2.083rpx;
         width: 100%;
         background-color: #dcdfe6;
       }
+
       .btn3 {
         font-weight: bold;
         font-size: 50rpx;
@@ -200,12 +235,14 @@ page {
         color: #000;
         font-family: -apple-system-font, "Helvetica Neue", sans-serif;
       }
+
       .startData {
         justify-content: left;
         font-size: 35.417rpx;
         color: #000;
       }
-      .startData2{
+
+      .startData2 {
         color: #000;
         margin-left: 12.5rpx;
       }

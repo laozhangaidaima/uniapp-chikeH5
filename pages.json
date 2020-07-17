@@ -22,7 +22,8 @@
 		}, {
 			"path": "pages/airserch/airserch",
 			"style": {
-				"titleNView": false
+				"titleNView": false,
+				"enablePullDownRefresh": true
 			}
 		}
 	    ,{

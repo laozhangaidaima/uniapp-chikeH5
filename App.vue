@@ -5,6 +5,8 @@ export default {
   },
   onShow: function() {
     console.log("App Show");
+    // console.log("123",--status-bar-height);
+    
   },
   onHide: function() {
     console.log("App Hide");
@@ -38,6 +40,8 @@ page {
 .flex-x-center {
   justify-content: center;
 }
+
+image{will-change: transform}
 
 @import "uview-ui/index.scss";
 /*每个页面公共css */

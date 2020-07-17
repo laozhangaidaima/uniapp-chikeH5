@@ -3,11 +3,11 @@
 		<day @sendparent="helloFn"></day>
 		<!-- 机票 -->
 		<view v-for="(item,index) in airData" :key="index" @click="toAirListDetail(index)">
-      <!-- 分割线 -->
-			<view  class="splitLine"></view>
-      <!-- 机票信息 -->
+			<!-- 分割线 -->
+			<view class="splitLine"></view>
+			<!-- 机票信息 -->
 			<view style="width:90%;margin:0 auto ">
-			<!-- 第一排 -->
+				<!-- 第一排 -->
 				<u-row gutter="16" style="align-items: start;padding-top: 41.667rpx;">
 					<u-col span="3">
 						<view class="flex_y">
@@ -28,9 +28,9 @@
 				<!-- 第二排 -->
 				<u-row gutter="16" style="margin-top: 20.833rpx;width:90%;padding-bottom: 41.667rpx; " class="font2">
 					<u-image width="25rpx" height="25rpx" :src="item.airLogo" style="margin-right: 8.33rpx;" :fade="false"></u-image>
-          {{item.flightNo}}<text style="padding:0 6.25rpx;">|</text>
-          {{item.planeStyle}}<text style="padding:0 6.25rpx;">|</text>
-          {{"有餐食"}}
+					{{item.flightNo}}<text style="padding:0 6.25rpx;">|</text>
+					{{item.planeStyle}}<text style="padding:0 6.25rpx;">|</text>
+					{{"有餐食"}}
 				</u-row>
 			</view>
 		</view>
@@ -56,6 +56,11 @@
 		},
 		components: {
 			day
+		},
+		onPullDownRefresh() {
+			this.helloFn(this.takeOffDate)
+			uni.stopPullDownRefresh();
+		
 		},
 
 		created() {
@@ -83,6 +88,7 @@
 
 		methods: {
 			helloFn(param1) {
+				console.log("helloFn -> param1", param1)
 				this.takeOffDate = param1;
 				this.getAit();
 			},
@@ -122,6 +128,8 @@
 				});
 			},
 			getAit() {
+				// 重置机票数据
+				this.airData = []
 				uni.showLoading({
 					title: "加载中"
 				});
@@ -154,7 +162,8 @@
 					method: "POST",
 					header: header,
 					success: res => {
-						// 这里要修改
+
+						// tocken过期 重新拉取
 						if (res.statusCode == 391) {
 							this.getTocken();
 						} else if (res.data.code == 0) {
@@ -162,9 +171,13 @@
 								title: res.data.message,
 								duration: 3000,
 								icon: 'none',
-
 							});
-
+						} else if (res.data.data.flights.length == 0) {
+							uni.showToast({
+								title: '当前日期暂无航班',
+								duration: 6000,
+								icon: 'none',
+							});
 						} else {
 							// 处理数据格式
 							this.airData = JSON.parse(JSON.stringify(res.data.data.flights));
@@ -192,9 +205,11 @@
 
 <style lang="scss">
 	page {
-		.splitLine{
-     width: 750rpx; height:12.5rpx;background-color: #F2F6FC;
-    }
+		.splitLine {
+			width: 750rpx;
+			height: 12.5rpx;
+			background-color: #F2F6FC;
+		}
 
 
 		.font1 {

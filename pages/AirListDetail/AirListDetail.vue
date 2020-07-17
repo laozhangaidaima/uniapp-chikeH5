@@ -1,13 +1,13 @@
 <template>
 	<view v-cloak>
 		<!-- 顶部 -->
-		<view class="flex_x flex-x-center flex-y-center" style="background: linear-gradient(to right, #02a6ff, #3e5ceb);">
+		<view class="flex_x flex-x-center flex-y-center" style="background: linear-gradient(to right, #02a6ff, #3e5ceb); ">
 			<view class="card">
 				<!-- 第一行 -->
 				<u-row gutter="16" style="margin-bottom: 41.667rpx;margin-top: 20.833rpx;">
 					<u-col span="9">
 						<view class="flex_x">
-							<image :src="src" style="padding-top: 2px;margin-right: 12.5rpx;width:29.167rpx;height:29.167rpx"></image>
+							<image :src="src" style="padding-top: 4.167rpx;margin-right: 12.5rpx;width:29.167rpx;height:29.167rpx"></image>
 							<view style="color:#00000">{{airCurData.fromairportShortName}}--{{airCurData.toairportShortName}}</view>
 						</view>
 					</u-col>
@@ -35,12 +35,12 @@
 					</u-col>
 
 					<u-col span="1">
-						<image style="padding-top: 41.667rpx;width:20.833rpx;height:137.5rpx " :src="src2"></image>
+						<image style="margin-top: 41.667rpx;width:20.833rpx;height:68px; " :src="src2"></image>
 					</u-col>
 					<!-- 机场 -->
 					<u-col span="3">
-						<view style="height:137.5rpx;margin-top:20.833rpx ">
-							<view style="margin-bottom:83.333rpx" >{{airCurData.orgAirportName}}</view>
+						<view style="height:78px;margin-top:16px " class="flex_y flex-space-between">
+							<view  >{{airCurData.orgAirportName}}</view>
 							<view >{{airCurData.dstAirportName}}</view>
 						</view>
 					</u-col>
@@ -59,7 +59,7 @@
 		</view>
 
 		<!-- 具体信息 -->
-		<view v-for="(item,value,index) in  airCurData.cabin" :key="index" class="detilMsg" >
+		<view v-for="(item,value,index) in  airCurData.cabin" :key="index" class="detilMsg" style="padding-bottom: 16px;    " >
 			<u-row gutter="16">
 				<u-col span="12">
 					<view class="productTypeName">{{item.productTypeName}}</view>
@@ -167,7 +167,7 @@
 			height: 41.667rpx;
 			border-radius: 50%;
 			position: absolute;
-			top: 129.167rpx;
+			top: 139.167rpx;
 			z-index: 10000;
 		}
 
