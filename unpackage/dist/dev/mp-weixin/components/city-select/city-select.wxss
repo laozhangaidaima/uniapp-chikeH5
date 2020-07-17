@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+view {
+  box-sizing: border-box;
+}
+.city-serach {
+  width: 100%;
+  color: #4a4a4a;
+  padding: 0 20rpx;
+}
+.city-serach-input {
+  margin: 20rpx 0;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  padding: 0 10rpx;
+  border: 1px solid #4d8cfd;
+  border-radius: 3px;
+}
+.city-select-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f6f5fa;
+}
+.city-select {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #f6f5fa;
+}
+.city-select .hot-title {
+  padding-left: 46rpx;
+  width: 100vw;
+  font-size: 14px;
+  line-height: 80rpx;
+  color: #9b9b9b;
+}
+.city-select .hot-city {
+  padding-left: 46rpx;
+  padding-right: 40rpx;
+  overflow: hidden;
+  width: 100vw;
+}
+.city-select .hot-city .hot-item {
+  float: left;
+  padding: 0 10rpx;
+  margin-right: 32rpx;
+  margin-bottom: 12rpx;
+  overflow: hidden;
+  width: 200rpx;
+  height: 62rpx;
+  font-size: 14px;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-height: 62rpx;
+  color: #4a4a4a;
+  background: #fff;
+  border: 1px solid #ebebf0;
+}
+.city-select .hot-city .hot-item:nth-child(3n) {
+  margin-right: 0;
+}
+.city-select .hot-city .hot-hidden {
+  display: none;
+  margin-right: 0;
+}
+.city-select .citys > view {
+  padding-left: 36rpx;
+  width: 100%;
+  font-size: 14px;
+  background: #fff;
+}
+.city-select .citys > view .citys-item-letter {
+  margin-left: -36rpx;
+  padding-left: 36rpx;
+  margin-top: -1px;
+  width: 100vw;
+  line-height: 60rpx;
+  color: #9b9b9b;
+  background: #f6f5fa;
+  border-top: none;
+}
+.city-select .citys > view .citys-item {
+  width: 100%;
+  line-height: 100rpx;
+  color: #4a4a4a;
+  border-bottom: 1px solid #ebebf0;
+}
+.city-select .citys > view .citys-item:last-child {
+  border: none;
+}
+.city-select .city-indexs-view {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 40rpx;
+  height: 100%;
+  text-align: center;
+}
+.city-select .city-indexs-view .city-indexs {
+  width: 40rpx;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-align-self: center;
+          align-self: center;
+}
+.city-select .city-indexs-view .city-indexs > view {
+  margin-bottom: 20rpx;
+  width: 40rpx;
+  font-size: 12px;
+  color: #4d8cfd;
+}
+.city-select .city-indexs-view .city-indexs > view:last-child {
+  margin-bottom: 0;
+}
+

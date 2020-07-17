@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/center/index",
     "pages/cityPick/cityPick",
-    "pages/airserch/airserch"
+    "pages/airserch/airserch",
+    "pages/AirListDetail/AirListDetail"
   ],
   "subPackages": [],
   "window": {
@@ -32,5 +33,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap46.json"
 }

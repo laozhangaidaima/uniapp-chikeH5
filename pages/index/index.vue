@@ -1,28 +1,34 @@
 <template>
-
-  <view class="content" :style="{ height: autoHeight,}">
-    <view class="flex_x" style="margin-top:20.833rpx">
+  <view class="content" :style="{ height: autoHeight }">
+    <view class="flex_x" style="margin-top: 20.833rpx;">
       <u-subsection
         :current="1"
         :list="['因公出行', '私人旅游']"
         class="btn"
-        style="border-radius: 41.667rpx;width: 312.5rpx; "
+        style="border-radius: 41.667rpx; width: 312.5rpx;"
       ></u-subsection>
       <text class="btn2">差旅标准</text>
     </view>
 
     <view class="cardBackgroud">
       <view class="card1 flex_x flex_x flex-space-between">
-        <text class="btn3" @click="toCityPick('fromCity')">{{searchData.fromCity}}</text>
+        <text class="btn3" @click="toCityPick('fromCity')">{{
+          searchData.fromCity
+        }}</text>
 
-        <image :src="src" style="margin-top: 6.25rpx;width:64.583rpx;height:64.583rpx"></image>
-        <text class="btn3" @click="toCityPick('arrCity')">{{searchData.arrCity}}</text>
+        <image
+          :src="src"
+          style="margin-top: 6.25rpx; width: 64.583rpx; height: 64.583rpx;"
+        ></image>
+        <text class="btn3" @click="toCityPick('arrCity')">{{
+          searchData.arrCity
+        }}</text>
       </view>
       <view class="underLine"></view>
 
       <view class="card1" @click="show = true">
-        <text class="startData">{{searchData.showTime}}</text>
-        <text class="startData2">{{searchData.weekDay}}</text>
+        <text class="startData">{{ searchData.showTime }}</text>
+        <text class="startData2">{{ searchData.weekDay }}</text>
       </view>
       <view class="underLine"></view>
 
@@ -60,42 +66,38 @@ export default {
       searchData: {
         showTime: "出发时间",
         arrCity: "出发城市",
-        fromCity: "到达城市"
-	  },
-	  autoHeight:'1041.667rpx',
+        fromCity: "到达城市",
+      },
+      autoHeight: "1041.667rpx",
     };
   },
   onLoad() {},
   onShow() {
-	//   动态高度
-	   const res = uni.getSystemInfoSync();
-	  this.autoHeight = (res.windowHeight-res.statusBarHeight)  + 'px'
-	
+    //   动态高度
+    const res = uni.getSystemInfoSync();
+    this.autoHeight = res.windowHeight - res.statusBarHeight + "px";
 
     uni.getStorage({
       key: "fromCity",
-      success: res => {
+      success: (res) => {
         this.searchData.fromCity = res.data.cityName;
-      }
+      },
     });
     uni.getStorage({
       key: "arrCity",
-      success: res => {
+      success: (res) => {
         this.searchData.arrCity = res.data.cityName;
-      }
+      },
     });
     uni.getStorage({
       key: "showTime",
-      success: res => {
+      success: (res) => {
         this.searchData.showTime = res.data.showTime;
         this.searchData.weekDay = res.data.weekDay;
-      }
+      },
     });
 
-	this.maxDate = this.getDateXHL(60);
-	
-
-
+    this.maxDate = this.getDateXHL(60);
   },
   methods: {
     getDateXHL(num) {
@@ -114,12 +116,12 @@ export default {
 
     toCityPick(city) {
       uni.navigateTo({
-        url: "/pages/cityPick/cityPick?cityType=" + city
+        url: "/pages/cityPick/cityPick?cityType=" + city,
       });
     },
     toSerch() {
       uni.navigateTo({
-        url: "/pages/airserch/airserch"
+        url: "/pages/airserch/airserch",
       });
     },
     change(e) {
@@ -133,23 +135,23 @@ export default {
       const data = {
         showTime: this.searchData.showTime || "出发时间",
         urlTime: e.result + " 00:00:00",
-        weekDay: weekDay
+        weekDay: weekDay,
       };
       //
       //  出发时间
       uni.setStorage({
         key: "showTime",
         data: data,
-        success: function() {}
+        success: function () {},
       });
 
       // 获取时间
       uni.getStorage({
         key: "showTime",
-        success: res => {
+        success: (res) => {
           this.searchData.showTime = res.data.showTime;
           this.searchData.weekDay = res.data.weekDay;
-        }
+        },
       });
 
       // 同步
@@ -162,20 +164,17 @@ export default {
         this.searchData.showTime = res.showTime;
         this.searchData.weekDay = res.weekDay;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 page {
- 
-
   .content {
-	   background: url("/static/airbg.jpg");
-  background-size: cover;
-//    height:100vh;
-
+    background: url("/static/airbg.jpg");
+    background-size: cover;
+    //    height:100vh;
 
     overflow: hidden;
     display: flex;

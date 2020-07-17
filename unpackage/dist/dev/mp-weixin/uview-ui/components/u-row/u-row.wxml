@@ -1,0 +1,1 @@
+<view class="u-row" style="{{'align-items:'+(uAlignItem)+';'+('justify-content:'+(uJustify)+';')}}"><slot></slot></view>
