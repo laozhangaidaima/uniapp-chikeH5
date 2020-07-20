@@ -92,7 +92,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   citySelect: function() {
-    return Promise.all(/*! import() | components/city-select/city-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/city-select/city-select")]).then(__webpack_require__.bind(null, /*! @/components/city-select/city-select.vue */ 102))
+    return Promise.all(/*! import() | components/city-select/city-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/city-select/city-select")]).then(__webpack_require__.bind(null, /*! @/components/city-select/city-select.vue */ 128))
   }
 }
 var render = function() {
@@ -161,7 +161,7 @@ var _citys = _interopRequireDefault(__webpack_require__(/*! ./citys.js */ 57));f
 //
 //
 //
-var citySelect = function citySelect() {Promise.all(/*! require.ensure | components/city-select/city-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/city-select/city-select")]).then((function () {return resolve(__webpack_require__(/*! @/components/city-select/city-select.vue */ 102));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { cityType: "", // 出发城市或到达城市
+var citySelect = function citySelect() {Promise.all(/*! require.ensure | components/city-select/city-select */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/city-select/city-select")]).then((function () {return resolve(__webpack_require__(/*! @/components/city-select/city-select.vue */ 128));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { data: function data() {return { cityType: "", // 出发城市或到达城市
       //需要构建索引参数的名称（注意：传递的对象里面必须要有这个名称的参数）
       formatName: "title", //当前城市
       activeCity: { id: 1, title: "南京市" }, //热门城市

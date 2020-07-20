@@ -152,13 +152,12 @@
     background: #F2F6FC;
 		.card {
 			background: #ffffff;
-			width: 86%;
+			width: 94%;
 			padding: 0 31.25rpx;
 			margin: 20.833rpx auto;
 			position: relative;
 			border-radius: 6.25rpx;
 		}
-
 		.card::before,
 		.card::after {
 			content: "";
@@ -167,7 +166,7 @@
 			height: 41.667rpx;
 			border-radius: 50%;
 			position: absolute;
-			top: 139.167rpx;
+			top: 90.167rpx;
 			z-index: 10000;
 		}
 

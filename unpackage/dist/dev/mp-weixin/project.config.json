@@ -4,38 +4,12 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": false,
-		"scopeDataCheck": false,
-		"coverView": true,
-		"es6": true,
-		"postcss": true,
-		"compileHotReLoad": false,
-		"preloadBackgroundData": false,
-		"minified": true,
-		"autoAudits": false,
-		"newFeature": false,
-		"uglifyFileName": false,
-		"uploadWithSourceMap": true,
-		"useIsolateContext": true,
-		"nodeModules": false,
-		"enhance": false,
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"showShadowRootInWxmlPanel": true,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
+		"urlCheck": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "",
 	"appid": "touristappid",
-	"projectname": "%E5%B7%AE%E5%AE%A2H5",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
+	"projectname": "差客H5",
 	"condition": {
 		"search": {
 			"current": -1,
@@ -45,7 +19,15 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
+			"current": -1,
+			"list": []
+		},
+		"gamePlugin": {
 			"current": -1,
 			"list": []
 		},
@@ -53,10 +35,23 @@
 			"current": 0,
 			"list": [
 				{
-					"name": "",
-					"path": "",
+					"id": 0,
+					"name": "pages/AirListDetail/AirListDetail",
+					"pathName": "pages/AirListDetail/AirListDetail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pages/center/center",
+					"pathName": "pages/center/center",
 					"query": "",
-					"id": 0
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/center/help",
+					"pathName": "pages/center/help",
+					"scene": null
 				}
 			]
 		}

@@ -4,17 +4,18 @@
 	},
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/main/main",
+			"style": {
+				"titleNView": false
+			}
+		},
+		{
 			"path": "pages/index/index",
 			"style": {
 				"titleNView": false
 			}
 		},
 		{
-			"path": "pages/center/index",
-			"style": {
-				"titleNView": false
-			}
-		}, {
 			"path": "pages/cityPick/cityPick",
 			"style": {
 				"titleNView": false
@@ -25,14 +26,46 @@
 				"titleNView": false,
 				"enablePullDownRefresh": true
 			}
-		}
-	    ,{
-            "path" : "pages/AirListDetail/AirListDetail",
-            "style" : {
+		}, {
+			"path": "pages/AirListDetail/AirListDetail",
+			"style": {
 				"titleNView": false
 			}
-        }
-    ],
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"titleNView": false
+			}
+		}
+
+		, {
+			"path": "pages/CustomerService/CustomerService",
+			"style": {
+				"titleNView": false
+			}
+		}, {
+			"path": "pages/trina/query/query",
+			"style": {
+				"titleNView": false
+			}
+		}, {
+			"path": "pages/hotel/index/index",
+			"style": {
+				"titleNView": false
+			}
+		}, {
+			"path": "pages/center/help",
+			"style": {
+				"titleNView": false
+			}
+		}, {
+			"path": "pages/center/HelpDetail",
+			"style": {
+				"titleNView": false
+			}
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uView",
@@ -41,29 +74,34 @@
 	},
 	"tabBar": {
 		"color": "#909399",
-		"selectedColor": "#303133",
+		"selectedColor": "#1F88F7",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
 		"list": [{
-			"pagePath": "pages/index/index",
-			"iconPath": "static/index.png",
-			"selectedIconPath": "static/index-selected.png",
-			"text": "机票选择"
-		}, {
-			"pagePath": "pages/center/index",
-			"iconPath": "static/center.png",
-			"selectedIconPath": "static/center-selected.png",
-			"text": "待开发"
-		}]
-	},
-	"condition" : { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [
+				"pagePath": "pages/main/main",
+				"iconPath": "static/imgs/icon_home.png",
+				"selectedIconPath": "static/imgs/icon_home_active.png",
+				"text": "首页"
+			},
 			{
-				"name": "", //模式名称
-				"path": "", //启动页面，必选
-				"query": "" //启动参数，在页面的onLoad函数里面得到
+				"pagePath": "pages/center/center",
+				"iconPath": "static/imgs/icon_my.png",
+				"selectedIconPath": "static/imgs/icon_my_active.png",
+				"text": "我的"
+			}, {
+				"pagePath": "pages/CustomerService/CustomerService",
+				"iconPath": "static/imgs/icon_contact.png",
+				"selectedIconPath": "static/imgs/icon_contact.png",
+				"text": "客服"
 			}
 		]
+	},
+	"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "pages/AirListDetail/AirListDetail", //模式名称
+			"path": "pages/AirListDetail/AirListDetail", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
 	}
 }

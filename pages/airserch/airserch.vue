@@ -8,29 +8,43 @@
 			<!-- 机票信息 -->
 			<view style="width:90%;margin:0 auto ">
 				<!-- 第一排 -->
-				<u-row gutter="16" style="align-items: start;padding-top: 41.667rpx;">
+				<u-row gutter="16" style="align-items: start;margin-top: 41.667rpx;">
 					<u-col span="3">
-						<view class="flex_y">
-							<text class="font1">{{ item.depDate}}</text>
-							<text class="font2" style="margin-top: 20.833rpx;">{{ item.fromairportShortName}}</text>
+						<view>
+							<view class="font1">{{ item.depDate}}</view>
+							<view class="font2" style="margin-top: 20.833rpx;">{{ item.fromairportShortName}}</view>
 						</view>
 					</u-col>
 					<u-col span="3" class="font2">
 						<text>{{item.flightTime }}</text>
 						<image class="img" src="/static/img_jiantou.png"></image>
 					</u-col>
-					<u-col span="3" class="flex_y">
-						<text class="font1">{{ item.arrDate}}</text>
-						<text class="font2" style="margin-top: 20.833rpx;">{{ item.toairportShortName}}</text>
+					<u-col span="3">
+						<view class="font1">{{ item.arrDate}}</view>
+						<view class="font2" style="margin-top: 20.833rpx;">{{ item.toairportShortName}}</view>
 					</u-col>
-					<u-col span="3" class="font3" style="display: flex;align-items: center;margin-top: 37.5rpx; ">{{"￥" +item.priceFare+"起" }}</u-col>
+
+					<u-col span="3" class="font3" style="display: flex;align-items: center;white-space: nowrap;margin-top: 20.833rpx; ">
+						<view class="" style="margin-top: 40.833rpx;">
+							
+						</view>
+						<view>
+							{{"￥" +item.priceFare+"起" }}
+						</view>
+					</u-col>
 				</u-row>
 				<!-- 第二排 -->
-				<u-row gutter="16" style="margin-top: 20.833rpx;width:90%;padding-bottom: 41.667rpx; " class="font2">
-					<u-image width="25rpx" height="25rpx" :src="item.airLogo" style="margin-right: 8.33rpx;" :fade="false"></u-image>
-					{{item.flightNo}}<text style="padding:0 6.25rpx;">|</text>
-					{{item.planeStyle}}<text style="padding:0 6.25rpx;">|</text>
-					{{"有餐食"}}
+				<u-row gutter="16" style="" class="font2 ">
+					<!-- 解决微信小程序 margin-top不生效问题-->
+					<view style="margin-top: 41.667rpx;"></view>
+					<view class="">
+						<image :src="item.airLogo" style="margin-right: 8.33rpx;width: 25rpx;height: 25rpx; " :fade="false"></image>
+						{{item.flightNo}}<text style="padding:0 6.25rpx;">|</text>
+						{{item.planeStyle}}<text style="padding:0 6.25rpx;">|</text>
+						{{"有餐食"}}
+					</view>
+					<!-- 解决微信小程序 margin-top不生效问题-->
+					<view style="margin-bottom: 41.667rpx;"></view>
 				</u-row>
 			</view>
 		</view>
@@ -60,7 +74,7 @@
 		onPullDownRefresh() {
 			this.helloFn(this.takeOffDate)
 			uni.stopPullDownRefresh();
-		
+
 		},
 
 		created() {
@@ -205,6 +219,8 @@
 
 <style lang="scss">
 	page {
+
+
 		.splitLine {
 			width: 750rpx;
 			height: 12.5rpx;
