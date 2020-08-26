@@ -3,3 +3,22 @@
  * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
  */
 @import 'uview-ui/theme.scss';
+
+
+$theme-color: #1b86f7;
+$theme-font-color: contrast($theme-color);
+$theme-deep-color: #3e5ceb;
+$theme-light-color: #02a6ff;
+$theme-bg-color: linear-gradient(to right, $theme-light-color, $theme-deep-color);
+$theme-orange-color: #ff8942;
+$theme-orange-bg-color: linear-gradient(to right, #ff9536, #ff7843);
+$theme-red-color: #ff1d1d;
+$theme-black-color: #111111;
+$theme-gray-color: #666666;
+$theme-lightgray-color: #999999;
+$theme-divide-color: #e5e5e5;
+$theme-body-bg-color: #f5f5f5;
+
+$tabbar-text-active-color: $theme-color;
+$radio-checked-icon-color: $theme-color;
+$switch-height: 26px;

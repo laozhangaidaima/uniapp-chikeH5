@@ -10,53 +10,68 @@
 			}
 		},
 		{
+			"path": "pages/login/login"
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"titleNView": false
+			}
+		},
+		{
 			"path": "pages/center/index",
 			"style": {
 				"titleNView": false
 			}
-		}, {
+		},
+		{
 			"path": "pages/cityPick/cityPick",
 			"style": {
 				"titleNView": false
 			}
-		}, {
+		},
+		{
 			"path": "pages/airserch/airserch",
 			"style": {
 				"titleNView": false,
 				"enablePullDownRefresh": true
 			}
-		}
-	    ,{
-            "path" : "pages/AirListDetail/AirListDetail",
-            "style" : {
+		},
+		{
+			"path": "pages/AirListDetail/AirListDetail",
+			"style": {
 				"titleNView": false
 			}
-        }
-    ],
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uView",
 		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"backgroundColor": "#F8F8F8",
+		"titleNView": false // 不展示顶部
 	},
 	"tabBar": {
 		"color": "#909399",
 		"selectedColor": "#303133",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
-		"list": [{
-			"pagePath": "pages/index/index",
-			"iconPath": "static/index.png",
-			"selectedIconPath": "static/index-selected.png",
-			"text": "机票选择"
-		}, {
-			"pagePath": "pages/center/index",
-			"iconPath": "static/center.png",
-			"selectedIconPath": "static/center-selected.png",
-			"text": "待开发"
-		}]
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/imgs/icon_home.png",
+				"selectedIconPath": "static/imgs/icon_home_active.png",
+				"text": "机票选择"
+			},
+			{
+				"pagePath": "pages/center/index",
+				"iconPath": "static/imgs/icon_my.png",
+				"selectedIconPath": "static/imgs/icon_my_active.png",
+				"text": "待开发"
+			}
+		]
 	},
-	"condition" : { //模式配置，仅开发期间生效
+	"condition": { //模式配置，仅开发期间生效
 		"current": 0, //当前激活的模式(list 的索引项)
 		"list": [
 			{

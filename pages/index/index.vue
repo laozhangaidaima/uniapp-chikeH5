@@ -1,11 +1,11 @@
 <template>
   <view class="content" :style="{ height: autoHeight }">
-    <view class="flex_x" style="margin-top: 20.833rpx;">
+    <view class="flex_x" style="margin-top: 20.833rpx">
       <u-subsection
         :current="1"
         :list="['因公出行', '私人旅游']"
         class="btn"
-        style="border-radius: 41.667rpx; width: 312.5rpx;"
+        style="border-radius: 41.667rpx; width: 312.5rpx"
       ></u-subsection>
       <text class="btn2">差旅标准</text>
     </view>
@@ -13,21 +13,21 @@
     <view class="cardBackgroud">
       <view class="card1 flex_x flex_x flex-space-between">
         <text class="btn3" @click="toCityPick('fromCity')">{{
-          searchData.fromCity
+          searchData.fromCity || "出发城市"
         }}</text>
 
         <image
           :src="src"
-          style="margin-top: 6.25rpx; width: 64.583rpx; height: 64.583rpx;"
+          style="margin-top: 6.25rpx; width: 64.583rpx; height: 64.583rpx"
         ></image>
         <text class="btn3" @click="toCityPick('arrCity')">{{
-          searchData.arrCity
+          searchData.arrCity || "到达城市"
         }}</text>
       </view>
       <view class="underLine"></view>
 
       <view class="card1" @click="show = true">
-        <text class="startData">{{ searchData.showTime }}</text>
+        <text class="startData">{{ searchData.showTime || "出发时间" }}</text>
         <text class="startData2">{{ searchData.weekDay }}</text>
       </view>
       <view class="underLine"></view>
@@ -64,9 +64,9 @@ export default {
       minDate: formatter.formatDate(new Date(), "yyyy-MM-dd"),
 
       searchData: {
-        showTime: "出发时间",
-        arrCity: "出发城市",
-        fromCity: "到达城市",
+        showTime: "",
+        arrCity: "",
+        fromCity: "",
       },
       autoHeight: "1041.667rpx",
     };
@@ -120,6 +120,35 @@ export default {
       });
     },
     toSerch() {
+      console.log("this.searchData.fromCity", this.searchData.fromCity);
+      if (!this.searchData.fromCity) {
+        uni.showToast({
+          title: "请选择出发城市",
+          duration: 2000,
+          icon: "none",
+        });
+        return;
+      }
+
+      if (!this.searchData.arrCity) {
+        uni.showToast({
+          title: "请选择到达城市",
+          duration: 2000,
+          icon: "none",
+        });
+        return;
+      }
+
+      if (!this.searchData.showTime) {
+        uni.showToast({
+          title: "请选择出发时间",
+          duration: 2000,
+          icon: "none",
+        });
+        return;
+      }
+
+
       uni.navigateTo({
         url: "/pages/airserch/airserch",
       });
